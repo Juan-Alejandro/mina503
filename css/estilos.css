@@ -69,7 +69,7 @@
 }
 
 /*Apartado para dispositivos moviles*/
-@media(max-width: 500px){
+@media(max-width: 600px){
 /*CABECERA*/
     
     .bus_cabecera {
