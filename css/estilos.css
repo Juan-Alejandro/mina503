@@ -22,13 +22,27 @@
     margin: 1vh; 
 }
 .bus_cabecera {
-    margin-left: 150vh;
+    margin-left: 120vh;
+    
+}
+.btn_buscar_cabecera{
+    background: none;
+    border: none;
+    margin-top: 2vh;
 }
 .img_lupa_cabecera {
     height: 50px;
 }
+.img_lupa_cabecera:hover {
+    filter: drop-shadow(4px 2px 1px white);
+}
 .i_cabecera {
-    
+    height: 5vh;
+    width: 300px;
+    border-radius: 10px;
+    vertical-align: top;
+    margin-top: 3vh;
+    font-size: 20px;
 }
 .bar_nav_cabecera {
     background: #333;
@@ -73,17 +87,17 @@
 /*CABECERA*/
     
     .bus_cabecera {
-        margin-top: 3vh;
-        margin-left: 8vh;
-        display: inline-flex;
-        
+        margin-top: 1vh;
+        margin-left: 3vh;
+        display: inline-flex;    
     }
     .img_lupa_cabecera {
-        height: 4vh;
+        margin-top: 1vh;    
+        height: 5vh;
     }
     .i_cabecera {
         height: 5vh;
-        width: 20vh;
+        width: 25vh;
         overflow-y: hidden;
     }
     
@@ -106,6 +120,9 @@
     .lis_nav_cabecera.active {
         max-height: 500px
     }
+
+/*CUERPO PRINCIPAL*/
+    
 }
 
 .container {
