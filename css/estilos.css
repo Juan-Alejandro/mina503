@@ -1,4 +1,10 @@
+/*FUENTES*/
+@font-face {
+    font-family: 'Merriweather';
+    src: url(../fuentes/Merriweather-Regular.ttf) format('truetype');
+}
 /*Apartado para pc*/
+    /*CABECERA*/
 * {
     padding: 0;
     margin: 0;
@@ -6,8 +12,100 @@
 .cabecera {
     background: #F9D308;
 }
-.logo_animado{
+.p_cabecera {
+    display: flex;
+    align-items: flex-start;
+}
+.logo_animado {
     height: 10vh;
+    vertical-align: top;
+    margin: 1vh; 
+}
+.bus_cabecera {
+    margin-left: 150vh;
+}
+.img_lupa_cabecera {
+    height: 50px;
+}
+.i_cabecera {
+    
+}
+.bar_nav_cabecera {
+    background: #333;
+    color: white;
+    position: relative;
+}
+.lis_nav_cabecera {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.lis_nav_cabecera li {
+    position: relative;
+}
+.lis_nav_cabecera a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+.lis_nav_cabecera a:hover {
+    background: #555;
+}
+.ico_ham {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 20px;
+}
+.ico_ham span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: 0.3s;
+}
+
+/*Apartado para dispositivos moviles*/
+@media(max-width: 500px){
+/*CABECERA*/
+    
+    .bus_cabecera {
+        margin-top: 3vh;
+        margin-left: 8vh;
+        display: inline-flex;
+        
+    }
+    .img_lupa_cabecera {
+        height: 4vh;
+    }
+    .i_cabecera {
+        height: 5vh;
+        width: 20vh;
+        overflow-y: hidden;
+    }
+    
+    
+    .ico_ham {
+        display: flex;
+    }
+    .lis_nav_cabecera {
+        display: flex;
+        flex-direction: column; 
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 1s ease;
+    }
+    .lis_nav_cabecera.active {
+        max-height: 500px
+    }
 }
 
 .container {
@@ -18,13 +116,4 @@
     flex: 1 1 300px; /* Ocupa al menos 300px y se adapta */
     margin: 10px;
     background-color: lightblue;
-}
-
-/*Apartado para dispositivos moviles*/
-@media(max-width: 500px){
-    .cabecera {
-        
-    }
-    
-    
 }

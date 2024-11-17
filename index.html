@@ -15,22 +15,87 @@
         >
     </head>
     <body>
-        <header>
-            <div class="cabecera">
-                <p>
-                    <img 
-                         title="Logo animado de mina" 
-                         src="imagenes/logo.gif"  
-                         class="logo_animado"
+        <header class="cabecera">
+            <div class="p_cabecera">
+                <img 
+                    title="Logo animado de mina" 
+                    src="imagenes/picapiedra.png"  
+                    class="logo_animado"
+                >
+                
+                <div class="bus_cabecera">
+                    <input 
+                        type="text" 
+                        placeholder="Buscar"
+                        class="i_cabecera"
                     >
-                    Mina Picapiedra
-                </p>
+                    <button class="btn_buscar_cabecera">
+                        <img 
+                             src="imagenes/lupa_busqueda.png"
+                             class="img_lupa_cabecera"     
+                        >
+                    </button>
+                </div>
             </div>
+            <nav class="bar_nav_cabecera">
+                <div class="ico_ham">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="lis_nav_cabecera">
+                    <li>
+                        <a href="#">
+                            Conócenos
+                        </a>
+                    </li>
+                    <li>
+                        <a href=#>
+                            Redes Sociales
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Servicios
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            Contáctanos
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </header>
+        
+
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
         <div class="container">
     <div class="item">1</div>
     <div class="item">2</div>
     <div class="item">3</div>
 </div>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const icoham = document.querySelector(".ico_ham");
+                const lisnav = document.querySelector(".lis_nav_cabecera");
+                icoham.addEventListener("click", function () {
+                    lisnav.classList.toggle("active");
+                });
+            });
+            
+            
+        </script>
     </body>
 </html>
