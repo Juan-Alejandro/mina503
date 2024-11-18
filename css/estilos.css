@@ -247,22 +247,60 @@
     padding: 15px;
 }
 .div_servicios_principal {
+    height: 300px;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-auto-flow: repeat (3,1fr);
+    grid-auto-flow: repeat (1,1fr);
+}
+.img_servicios_principal {
+    width: 10vh;
+    display: block;
+   
     
 }
+
 .img_novedades_principal {
-    height: 50px;
+    width: 100%;
+    height: 49vh;
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    background: url(../imagenes/Novedades.jpg);
+}
+.div_txtimg_principal {
+    font-family: 'Merriweather';
+    text-align: center;
+    margin-top: 35%;
+    font-size: 50px;
+    color: white;
+}
+.div_txtimg1_principal {
+    font-family: 'Merriweather';
+    text-align: center;
+    margin-top:5vh;
+    font-size: 50px;
+    color: white;
 }
 .img_tienda_principal {
-    height: 50px;
+    width: 100%;
+    height: 49vh;
+    grid-row: 1 / 3;
+    grid-column: 2 / 3;
+    background: url(../imagenes/Tienda.jpg);
 }
 .img_viajesflete_principal {
-    height: 50px;
+    width: 100%;
+    height: 25vh;
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+    background: url(../imagenes/Viajes.jpg);
 }
 .img_rentamaquina_principal {
-    height: 50px;
+    width: 100%;
+    height: 24vh;
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    background: url(../imagenes/Renta.jpeg);
 }
 /*Apartado para dispositivos moviles*/
 @media(max-width: 600px){
@@ -321,7 +359,9 @@
         font-family: 'Merriweather';
     }
     .img_granoarena_principal {
-        margin: 0;
+        margin: 10px;
+        height: 125px;
+        width: 125px;
     }
     .a_redsocial_principal {
         margin-top: 5vh;
@@ -337,7 +377,26 @@
     .div_social_principal {
         height: 100px;
     }
+    #p_servicios_principal {
+        font-size: 4vh;
+    }
     
+    .div_servicios_principal {
+        display: flex;
+        flex-direction: column;
+    }
+    .img_servicios_principal {
+        height: 100px;
+        width: 100%;
+    }
+    .div_txtimg_principal {
+        font-size: 16px;
+        margin-top: 30px;
+    }
+    .div_txtimg1_principal {
+        font-size: 16px;
+        margin-top: 30px;
+    }
     
     
 }
