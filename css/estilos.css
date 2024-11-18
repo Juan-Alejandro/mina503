@@ -106,7 +106,7 @@
 }
 .div_redsocial_principal {
     width: 100%;
-    height: auto;
+    min-height:200px;
     background: lightgray;
     display: flex;
     flex-wrap: wrap;
@@ -116,6 +116,7 @@
     border: 1px solid black;
     flex:1 0 150px;
     margin: 10px;
+    margin-top: 6vh;
 }
 .icons_social_principal{
     font-size: 10vh;
@@ -191,7 +192,7 @@
     opacity: 1;
 }
 .div_face_principal:hover {
-    transform: scale(1.05);
+    transform: scale(1.04);
     border: none;
 }
 
@@ -229,27 +230,22 @@
         width: 25vh;
         overflow-y: hidden;
     }
-    
-    
     .ico_ham {
         display: flex;
     }
     .lis_nav_cabecera {
         display: flex;
-        flex-direction: column; 
-        width: 100%;
-        background-color: #333;
-        position: absolute;
-        top: 100%; 
-        left: 0;
-        max-height: 0;
+        flex-direction: column;
         overflow: hidden;
-        transition: max-height 1s ease;
+        height: 0;
+        transition: height 2s ease;
     }
     .lis_nav_cabecera.active {
-        max-height: 500px
+        height: 236px;
     }
-
+    .lis_nav_cabecera li {
+        border-bottom: 1px solid #555;
+    }
 /*CUERPO PRINCIPAL*/
     #p_conocenos_principal {
         font-size: 5vh;
@@ -257,7 +253,7 @@
     .a_redsocial_principal {
         margin-top: 5vh;
         color: black;
-        font-size: 4vh;
+        font-size: 3vh;
     }
     .a_redsocial_principal:hover {
         color: red;
