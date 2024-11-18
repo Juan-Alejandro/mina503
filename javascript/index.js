@@ -6,3 +6,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     lisnav.classList.toggle("active");
                 });
             });
+
+
+/*CUERPO*/
+
+function pregunta_redireccionador(){
+                const confirmacion = confirm("¿Estás seguro de que deseas abandonar el sitio?");
+                if(!confirmacion) {
+                    event.preventDefault();
+                }
+            }
