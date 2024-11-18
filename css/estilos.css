@@ -259,10 +259,8 @@
     grid-auto-flow: repeat (1,1fr);
 }
 .img_servicios_principal {
-    width: 10vh;
+    width: 100%;
     display: block;
-   
-    
 }
 
 .img_novedades_principal {
@@ -416,18 +414,20 @@
     .div_servicios_principal {
         display: flex;
         flex-direction: column;
+        height: auto;
     }
     .img_servicios_principal {
-        height: 100px;
+        height: 30vh;
         width: 100%;
     }
     .div_txtimg_principal {
         font-size: 16px;
-        margin-top: 30px;
+        margin-top: 12vh;
     }
     .div_txtimg1_principal {
         font-size: 16px;
         margin-top: 30px;
+        margin-top: 12vh;
     }
     .div_materialservicio_principal {
         height:auto;
