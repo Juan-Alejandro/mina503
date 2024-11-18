@@ -3,6 +3,8 @@
     font-family: 'Merriweather';
     src: url(../fuentes/Merriweather-Regular.ttf) format('truetype');
 }
+/*CONFIGURACIONES HTML*/
+
 /*Apartado para pc*/
     /*CABECERA*/
 * {
@@ -102,7 +104,8 @@
     font-family: 'Merriweather';
     text-shadow: 1px 1px 10px black;
     text-align: center;
-    background: #F9D308; 
+    background: #F9D308;
+    border-bottom: 2px dashed black;
 }
 .div_granoarena_principal{
     padding: 5vh;
@@ -118,10 +121,12 @@
     border: none;
 }
 .p_granoarena_principal {
-    font-size: 30px;
+    font-size: 25px;
     padding-left: 30px;
     padding-right: 30px;
     font-family: 'Merriweather';
+    text-align: justify;
+    hyphens: auto;
 }
 .img_granoarena_principal {
     height: 30vh;
@@ -236,7 +241,7 @@
 }
 
 .div_materialservicio_principal {
-    
+   height: 450px;
 }
 #p_servicios_principal {
     font-size: 7vh;
@@ -302,6 +307,33 @@
     grid-column: 3 / 4;
     background: url(../imagenes/Renta.jpeg);
 }
+.div_promociones_principal {
+    display: flex;
+    flex-wrap: wrap;
+}
+.flex_promociones_principal {
+    flex: 1 1 100px; 
+    margin: 10px;
+    
+}
+.img_promociones_principal {
+    
+    margin: 50px;
+}
+#font_promo_principal {
+    font-family: 'Merriweather';
+    font-size: 30px;
+    text-align: center;
+    
+}
+#p_promocionestxt_principal {
+    margin:5rem;
+    text-align: justify;
+    font-size: 3vh;
+
+    
+}
+
 /*Apartado para dispositivos moviles*/
 @media(max-width: 600px){
 /*CABECERA*/
@@ -397,6 +429,22 @@
         font-size: 16px;
         margin-top: 30px;
     }
-    
+    .div_materialservicio_principal {
+        height:auto;
+    }
+    .div_promociones_principal {
+        margin-top: 0;
+    }
+    .img_promociones_principal {
+        margin: 10px;
+        height: 100%;
+        width: 80%;
+    }
+    #font_promo_principal {
+        font-size: 4vh;
+    }
+    #p_promocionestxt_principal {
+        margin: 2rem;
+    }
     
 }
