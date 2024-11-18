@@ -323,6 +323,7 @@
     background: url(../imagenes/Renta.jpeg);
 }
 .div_promociones_principal {
+    background: white;
     display: flex;
     flex-wrap: wrap;
 }
@@ -332,7 +333,6 @@
     
 }
 .img_promociones_principal {
-    
     margin: 50px;
 }
 #font_promo_principal {
