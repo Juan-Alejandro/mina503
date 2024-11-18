@@ -82,6 +82,118 @@
     transition: 0.3s;
 }
 
+/*CUERPO PRINCIPAL*/
+.main {
+    height: 1000px;
+}
+ 
+.div_img_principal {
+    background: #333;
+    padding: 0;
+}
+.img_ini_principal {
+    width: 100%;
+}
+.div_conocenos_principal {
+    
+}
+#p_conocenos_principal {
+    font-size: 10vh;
+    font-family: 'Merriweather';
+    text-shadow: 1px 1px 10px black;
+    text-align: center;
+    background: #F9D308; 
+}
+.div_redsocial_principal {
+    width: 100%;
+    height: auto;
+    background: lightgray;
+    display: flex;
+    flex-wrap: wrap;
+}
+.div_social_principal {
+    height: 100px;
+    border: 1px solid black;
+    flex:1 0 150px;
+    margin: 10px;
+}
+.icons_social_principal{
+    font-size: 10vh;
+    margin-top: 2vh;
+}
+.div_insta_principal {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.div_insta_principal::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+    background: linear-gradient(90deg,#FFC800,#FE0C4E,#FD0188,#FC01CB,#AC07F0);
+    filter: blur(10px); 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.div_insta_principal:hover::before {
+    opacity: 1;
+}
+.div_insta_principal:hover {
+    transform: scale(1.05);
+    border: none;
+}
+
+.div_x_principal {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.div_x_principal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+    background: linear-gradient(90deg,white,lightgray,darkgray,gray,black);
+    filter: blur(10px); 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.div_x_principal:hover::before {
+    opacity: 1;
+}
+.div_x_principal:hover {
+    transform: scale(1.05);
+    border: none;
+}
+.div_face_principal {
+    position: relative;
+    transition: transform 0.3s ease;
+}
+.div_face_principal::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1; 
+    background: linear-gradient(90deg,white,lightblue,blue,darkblue);
+    filter: blur(10px); 
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+.div_face_principal:hover::before {
+    opacity: 1;
+}
+.div_face_principal:hover {
+    transform: scale(1.05);
+    border: none;
+}
 /*Apartado para dispositivos moviles*/
 @media(max-width: 600px){
 /*CABECERA*/
@@ -122,6 +234,10 @@
     }
 
 /*CUERPO PRINCIPAL*/
+    .div_conocenos_principal p {
+        font-size: 5vh;
+    }
+    
     
 }
 
