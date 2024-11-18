@@ -194,6 +194,23 @@
     transform: scale(1.05);
     border: none;
 }
+
+.p_social_principal {
+    display:flex;
+    flex-direction:row;
+    
+}
+.a_redsocial_principal {
+    margin-top: 5vh;
+    color: black;
+}
+.a_redsocial_principal:hover {
+    color: red;
+}
+.font_redsocial_principal {
+    font-family: 'Merriweather';
+    margin-top: 2vh;
+}
 /*Apartado para dispositivos moviles*/
 @media(max-width: 600px){
 /*CABECERA*/
@@ -234,11 +251,20 @@
     }
 
 /*CUERPO PRINCIPAL*/
-    .div_conocenos_principal p {
+    #p_conocenos_principal {
         font-size: 5vh;
     }
-    
-    
+    .a_redsocial_principal {
+        margin-top: 5vh;
+        color: black;
+        font-size: 4vh;
+    }
+    .a_redsocial_principal:hover {
+        color: red;
+    }
+    .font_redsocial_principal {
+        display: none;
+    }
 }
 
 .container {
