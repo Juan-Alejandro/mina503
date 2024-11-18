@@ -435,6 +435,62 @@
     color: black;
 }
 
+/*MENU PRINCIPAL DEL PUNTO DE VENTA*/
+.div_perfpc_pventa {
+    position: absolute;
+    background: #333;
+    width: 30%;
+    min-height: 700px;
+    text-align: center;
+    padding-top: 30px;
+}
+#p_perfbienv_pventa {
+    font-family: 'Merriweather';
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+#img_perfil_pventa {
+    border: 1px solid white;
+    height: 200px;  
+    width: 200px;
+    
+}
+.div_cuerpoprin_pventa {
+    width: 70%;
+    background: blue;
+    float: right;
+    height: 50px;
+}
+
+    /*COSAS DE CELULAR*/
+.div_contham_venta {
+    background: #333;
+    color: white;
+    position: relative;
+    width: 100%;
+}
+.ico_ham_pventa {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 20px;
+}
+.ico_ham_pventa span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: 0.3s;
+}
+#icon_usuario_menupventa {
+    font-size: 30px;
+}
+
+
+
+
+
 /*Apartado para dispositivos moviles*/
 @media(max-width: 400px){
 /*CABECERA*/
@@ -578,4 +634,29 @@
     .form_inises input {
         margin-bottom: 10px;
     }
+    
+/*PUNTO DE VENTA MENU*/
+    .ico_ham_pventa {
+        display: flex;
+        
+    }
+    .div_perfil_pventa {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 0;
+        width: 0;
+        transition: height 2s ease;
+        
+    }
+    .div_perfil_pventa.active {
+        width: 500px;
+        height: 500px;
+    }
+    .div_perfpc_pventa {
+        position: relative;
+    }
+    
+    
+    
 }
