@@ -39,6 +39,7 @@
                              class="img_lupa_cabecera"     
                         >
                     </button>
+                    <i class='bx bxs-user' id="icon_cabecera_principal" onclick="abriris()"></i>
                 </div>
             </div>
             <nav class="bar_nav_cabecera">
@@ -70,6 +71,14 @@
                     <li>
                         <a href="#contactanos">
                             Contacto
+                        </a>
+                    </li>
+                    <li id="li_solomovil_principal">
+                        <a 
+                           href="html/inicio_secion.html" 
+                           onclick="pregunta_redireccionador()"
+                        >
+                            Iniciar Sesión
                         </a>
                     </li>
                 </ul>
@@ -164,22 +173,32 @@
                     Nuestros Materiales y Servicios
                 </p>
                 <div class="div_servicios_principal">
-                    <div class="img_novedades_principal img_servicios_principal">
+                    <div 
+                         class="img_novedades_principal img_servicios_principal" onclick="abrirstandby()"
+                    >
                         <div class="div_txtimg_principal">
                             Novedades
                         </div>
                     </div>
-                    <div class="img_tienda_principal img_servicios_principal">
+                    <div 
+                         class="img_tienda_principal img_servicios_principal" onclick="abrirstandby()"
+                    >
                         <div class="div_txtimg_principal">
                             Tienda
                         </div>
                     </div>
-                    <div class="img_viajesflete_principal img_servicios_principal">
+                    <div 
+                         class="img_viajesflete_principal img_servicios_principal" 
+                         onclick="abrirstandby()"
+                    >
                         <div class="div_txtimg1_principal">
                             Viajes y Fletes
                         </div>
                     </div>
-                    <div class="img_rentamaquina_principal img_servicios_principal">
+                    <div 
+                         class="img_rentamaquina_principal img_servicios_principal" 
+                         onclick="abrirstandby()"
+                    >
                         <div class="div_txtimg1_principal">
                             Renta de maquinaria
                         </div>
@@ -219,6 +238,7 @@
 
             </p>
         </footer>
+
         <script src="javascript/index.js">
         </script>
     </body>
