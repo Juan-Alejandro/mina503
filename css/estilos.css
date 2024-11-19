@@ -532,6 +532,71 @@
     text-align: justify;
     padding: 30px;
 }
+#input_cargarimagen_pventa {
+    display: none;
+}
+#icon_photo_pventa {
+    font-size: 10vh;
+    color: #ffcc00;
+}
+.lbl_clas_pventa {
+    font-size: 4vh;
+}
+.input_clas_pventa {
+    height: 40px;
+    font-size: 30px;
+}
+.btn_cerrses_pventa {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+     outline: 0;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 140px;
+    height: 50px;
+    border-radius: 0.5em;
+    box-shadow: 0 0 0.625em 0 #ffcc00;
+    overflow: hidden;
+}
+.btn_cerrses_pventa div{
+    transform: translateY(0px);
+    width: 100%;
+}
+.btn_cerrses_pventa,
+.btn_cerrses_pventa div{
+    transition: 0.6s cubic-bezier(.16,1,.3,1);
+}
+.btn_cerrses_pventa div span{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0em 1.125em; 
+}
+.btn_cerrses_pventa div:nth-child(1){
+    background-color: #F1CB08;
+}
+.btn_cerrses_pventa div:nth-child(2){
+    background-color: red;
+}
+.btn_cerrses_pventa:hover {
+    box-shadow: .055em 0.625em 1em red;
+}
+.btn_cerrses_pventa:hover div {
+    transform: translateY(-50px);
+}
+.btn_cerrses_pventa p {
+    font-size: 17px;
+    font-weight: bold;
+    color: #ffffff; 
+}
+.btn_cerrses_pventa:active {
+    transform: scale(.95);
+}
+
 
     /*COSAS DE CELULAR*/
 .div_contham_venta {
@@ -721,17 +786,19 @@
         height: 0;
         width: 0;
         transition: height 2s ease;
-        
+        text-align: center;
+        width: 100%;
     }
     .div_perfil_pventa.active {
         width: 100%;
-        height: 500px;
+        height: 750px;
     }
     .div_perfpc_pventa {
         position: relative;
+        padding-left: 90px;
     }
     .div_cuerpoprin_pventa {
-        float: left;
+       
         width: 100%;
         background: white;
     }
@@ -741,6 +808,9 @@
     }
     .p_btns_pvetna {
         display: none;
+    }
+    .accs_clas_pventa {
+        width: 180%;
     }
     
 }

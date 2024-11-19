@@ -36,26 +36,88 @@
                         <img 
                              id="img_perfil_pventa" 
                         >
+                        <br>
                         <input 
                                type="file" 
                                id="input_cargarimagen_pventa" 
                                accept="image/*"
                                capture
                         > 
+                        <i 
+                           class='bx bxs-photo-album' 
+                           id="icon_photo_pventa"
+                           title="Cargar Nueva foto de perfil"
+                           
+                        >
+                        </i>
                         <br>
-                        <label for="rango">Rango:</label>
+                        <label 
+                               for="rango" 
+                               class="lbl_clas_pventa accs_clas_pventa"
+                        >
+                            Rango:
+                        </label>
                         <br>
-                        <input type="text" value="" class="" name="rango">
+                        <input 
+                               type="text" 
+                               value="" 
+                               class="input_clas_pventa accs_clas_pventa" 
+                               name="rango"
+                        >
                         <br>
-                        <label for="usuario">Usuario:</label>
+                        <label 
+                               for="usuario" 
+                               class="lbl_clas_pventa accs_clas_pventa"
+                        >
+                            Usuario:
+                        </label>
                         <br>
-                        <input type="text" value="" class="" name="usuario">
+                        <input 
+                               type="text" 
+                               value="" 
+                               class="input_clas_pventa accs_clas_pventa" 
+                               name="usuario"
+                        >
                         <br>
-                        <label for="contra">Contraseña</label>
+                        <label 
+                               for="contra" 
+                               class="lbl_clas_pventa accs_clas_pventa"
+                        >
+                            Contraseña
+                        </label>
                         <br>
-                        <input type="text" value="" class="" name="contra">
+                        <input 
+                               type="text" 
+                               value="" 
+                               class="input_clas_pventa accs_clas_pventa" 
+                               name="contra"
+                        >
+                        <button 
+                                class="btn_cerrses_pventa" 
+                                onclick="cerrarsecion()"
+                        >
+                            <div>
+                                <span>
+                                    <p>
+                                        ¡Cuidado!
+                                    </p>
+                                    <p>
+                                        D:
+                                    </p>
+                                </span>
+                            </div>
+                            <div>
+                                <span>
+                                    <p>
+                                        Cerrar Sesion
+                                    </p>
+                                    <p>
+                                        D:
+                                    </p>
+                                </span>
+                            </div>
+                        </button>
                     </div>
-                    
                 </div>
                 <div class="div_cuerpoprin_pventa">
                     <h1 id="h1_menuadmin_pventa">
@@ -154,6 +216,18 @@
             </div> 
         </main>
     </body>
+    <script>
+        function cerrarsecion() {
+            const confirmacion = confirm("¿Estás seguro de que deseas abandonar el sitio?");
+                if(!confirmacion) {
+                    event.preventDefault();
+                    
+                }else{
+                    window.open("../inicio_secion.html","_self");
+                }
+            
+        }
+    </script>
     <script src="../../javascript/index.js"> 
     </script>
 </html>
