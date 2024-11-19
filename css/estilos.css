@@ -1,3 +1,16 @@
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: black; 
+}
+::-webkit-scrollbar-thumb {
+    background: #F9D308;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+
+
 /*FUENTES*/
 @font-face {
     font-family: 'Merriweather';
@@ -382,6 +395,7 @@
     margin-top: 10%;
 }
 .btnregreso_inises {
+    text-decoration: none;
     position: absolute;
     top: 10px;
     left: 10px;
@@ -418,26 +432,28 @@
     font-size: 16px;
     margin-bottom: 30px;
 }
-.form_inises button {
-            background-color: black;
-            color: white;
-            border: none;
-            padding: 12px;
-            font-size: 16px;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
-            width: 100%;
-            margin-bottom: 50px ;
+.form_inises a {
+    text-decoration: none;
+    text-align: center;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-bottom: 50px ;
 }
-.form_inises button:hover {
+.form_inises a:hover {
     background-color: white;
     color: black;
 }
 
 /*MENU PRINCIPAL DEL PUNTO DE VENTA*/
 .div_perfpc_pventa {
-    position: absolute;
+    position: fixed;
     background: #333;
     width: 30%;
     min-height: 700px;
@@ -457,9 +473,25 @@
 }
 .div_cuerpoprin_pventa {
     width: 70%;
-    background: blue;
+    background: white;
+    color: black;
+    height: 100%;
     float: right;
-    height: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#h1_menuadmin_pventa {
+    margin-bottom: 5vh;
+}
+.div_btns_pventa {
+    flex: 1 1 120px;
+    border: 1px solid black;
+    background: lightblue;
+}
+.div_perfil_pventa {
+
+    
 }
 
     /*COSAS DE CELULAR*/
@@ -628,7 +660,7 @@
         height: 100%;
         max-height: 300px;
     }
-    .form_inises button {
+    .form_inises a {
         margin-bottom: 10px; 
     }
     .form_inises input {
@@ -637,10 +669,10 @@
     
 /*PUNTO DE VENTA MENU*/
     .ico_ham_pventa {
-        display: flex;
-        
+        display: flex;   
     }
     .div_perfil_pventa {
+        position: relative;
         display: flex;
         flex-direction: column;
         overflow: hidden;
@@ -650,13 +682,15 @@
         
     }
     .div_perfil_pventa.active {
-        width: 500px;
+        width: 100%;
         height: 500px;
     }
     .div_perfpc_pventa {
         position: relative;
     }
-    
+    .div_cuerpoprin_pventa {
+        float: left;
+    }
     
     
 }
