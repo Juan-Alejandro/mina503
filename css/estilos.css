@@ -482,16 +482,55 @@
     flex-wrap: wrap;
 }
 #h1_menuadmin_pventa {
-    margin-bottom: 5vh;
+    text-align: center;
+    height: 60px;
+    font-size: 3rem;
+    background: #F9D308;
+    color: black;
+    font-family: 'Merriweather';
 }
 .div_btns_pventa {
-    flex: 1 1 120px;
+    flex: 1 1 200px;
+    max-height: 200px;
     border: 1px solid black;
-    background: lightblue;
+    background: white;
+    display: flex;
+    flex-direction: row;
 }
-.div_perfil_pventa {
-
-    
+#icon_venta_pventa {
+    font-size: 30vh;
+    margin: -5px;
+    background: linear-gradient(90deg, #F9D308,#e8c209,#d3b108,#d3b108,#e8c209,#F9D308);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: animacion_iconos 10s infinite;
+    background-size: 300%;
+}
+@keyframes animacion_iconos {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+}
+.font_btns_pventa {
+    font-size: 4vh;
+    font-family: fantasy;
+    align-content: center;
+    margin-right: 10px;
+    max-width: 160px;
+}
+.p_btns_pvetna {
+    padding: 2vh;
+    background: whitesmoke;
+    font-size: 1rem;
+    border-radius: 50px;
+    text-align: justify;
+    padding: 30px;
 }
 
     /*COSAS DE CELULAR*/
@@ -693,8 +732,15 @@
     }
     .div_cuerpoprin_pventa {
         float: left;
+        width: 100%;
         background: white;
     }
-    
+    #h1_menuadmin_pventa {
+        font-size: 25px;
+        align-content: center;
+    }
+    .p_btns_pvetna {
+        display: none;
+    }
     
 }
