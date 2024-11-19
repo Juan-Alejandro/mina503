@@ -668,6 +668,9 @@
     }
     
 /*PUNTO DE VENTA MENU*/
+    .main_menupventa {
+        background: white;
+    }
     .ico_ham_pventa {
         display: flex;   
     }
@@ -690,6 +693,7 @@
     }
     .div_cuerpoprin_pventa {
         float: left;
+        background: white;
     }
     
     
