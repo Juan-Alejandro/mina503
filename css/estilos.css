@@ -900,6 +900,7 @@ body {
         display: none;
     }
     .btn_cerrarses_movil_pventa {
+        display: block;
         width: 6.5em;
         height: 2.3em;
         margin: 0.5em;
