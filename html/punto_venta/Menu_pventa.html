@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            Iniciar Sesión
+            Menu de administrador   
         </title>
         <meta charset="utf-8">
         <meta 
@@ -235,27 +235,13 @@
         </main>
     </body>
     <script>
-        function openSection(valor) {
-            var num = parseInt(valor);
-            //alert(num);
-            switch(num){
-                case 1:
-                    window.open("secciones/ventas.html","_self");
-                    break;
-                case 2:
-                    window.open("../standby.html","_self");
-                    break;
-                case 3:
-                    
-                    break;
-                case 4:
-                    
-                    break;
-                case 5:
-                    
-                    break;
-            }
-        }
+        document.addEventListener("DOMContentLoaded", function () {
+                const icoham_pventa = document.querySelector(".ico_ham_pventa");
+                const lisnav_pventa = document.querySelector(".div_perfil_pventa");
+                icoham_pventa.addEventListener("click", function () {
+                    lisnav.classList.toggle("active");
+                });
+            });
     </script>
     <script src="../../javascript/index.js"> 
     </script>

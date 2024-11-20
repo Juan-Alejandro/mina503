@@ -637,22 +637,66 @@ body {
 }
 
 /*APARTADO DE VENTAS*/
-.aside_ventas {
+.main_ventas {
+    width: 100%;
+    height: auto;    
+
+}
+.div_cuerpoprin_ventas {
+    background: yellow;
+    float: right;
+    width: 80%;
+    color: black;
+}
+
+
+/*CONFIGURACIONES PARA LOS MENUS DE SECCIONES (APARTADOS)*/
+.div_cuerpoops_ventas{
     float: left;
     width: 20%;
     height: 100%;
     position: fixed;
-    background: blue;
+    background: black;
+    padding-top: 3vh;
+
 }
-.main_ventas {
-    float: right;
-    width: 80%;
-    height: auto;
-    
-    background: red;
+#icon_venta_venta {
+    color: white;
+    font-size: 15vh;
+}
+.div_opcion_venta {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.div_redirect_venta {
+    text-align: center;
+    width: 100%;
+    flex: 1 1 20vh;
+}
+.p_redirect_venta {
+    color: white;
+    border-bottom: 2px solid white;
 }
 
-
+    /*COSAS DE CELULAR*/
+.div_cont_nav_ventas {
+    background: lightgray;
+    color: black;
+    position: relative;
+    width: 100%;
+}
+.ico_ham_ventas {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 20px;
+}
+#icon_set_ventas {
+    font-size: 30px;
+}
 
 
 /*Apartado para dispositivos moviles*/
@@ -839,6 +883,35 @@ body {
     }
     .accs_clas_pventa {
         width: 180%;
+    }
+/*VENTA MENU*/
+    .div_cuerpoprin_ventas {
+        width: 100%;
+    }
+    /*CONFIGURACIONES PARA LOS MENUS DE SECCIONES (APARTADOS)*/
+    .ico_ham_ventas {
+        display: flex;
+    }
+    .div_cuerpoops_ventas {
+        position: fixed;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 0;
+        width: 0;
+        transition: width .5s ease;
+        text-align: center;
+        height: 100%;
+    }
+    .div_cuerpoops_ventas.active {
+        width: 50%;
+        height: 100%;
+    }
+    #icon_venta_venta {
+        font-size: 10vh;
+    }
+    .div_redirect_venta {
+        flex: 1 1 15vh;
     }
     
 }

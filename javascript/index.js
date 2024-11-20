@@ -1,12 +1,6 @@
 /*CABECERA*/
             /*MENU DESPLEGABLE MOVIL*/
-            document.addEventListener("DOMContentLoaded", function () {
-                const icoham = document.querySelector(".ico_ham");
-                const lisnav = document.querySelector(".lis_nav_cabecera");
-                icoham.addEventListener("click", function () {
-                    lisnav.classList.toggle("active");
-                });
-            });
+            
 
 
 /*CUERPO*/
@@ -32,13 +26,7 @@
             }
 /*MENU DE PUNTO DE VENTA*/
             /*MENU DESPLEGABLE MOVIL*/
-            document.addEventListener("DOMContentLoaded", function () {
-                const icoham = document.querySelector(".ico_ham_pventa");
-                const lisnav = document.querySelector(".div_perfil_pventa");
-                icoham.addEventListener("click", function () {
-                    lisnav.classList.toggle("active");
-                });
-            });
+            
             /*CARGADOR DE IMAGEN*/
                 const upicon = document.getElementById('icon_photo_pventa');
                 const archivo = document.getElementById('input_cargarimagen_pventa');
@@ -75,4 +63,51 @@
                 }
             
         }
-    
+/*ENVIOS A SECCIONES DE MENU PUNTO DE VENTA*/
+        function openSection(valor) {
+            var num = parseInt(valor);
+            //alert(num);
+            switch(num){
+                case 1:
+                    window.open("secciones/ventas.html","_self");
+                    break;
+                case 2:
+                    window.open("../standby.html","_self");
+                    break;
+                case 3:
+                    
+                    break;
+                case 4:
+                    
+                    break;
+                case 5:
+                    
+                    break;
+            }
+        }
+/*ENVIOS A SECCIONES BARRA LATERAL DE LOS APARTADOS*/
+        function openSectionAside(valor) {
+            var num = parseInt(valor);
+            //alert(num);
+            switch(num){
+                case 1:
+                    window.open("ventas.html","_self");
+                    break;
+                case 2:
+                    window.open("../../standby.html","_self");
+                    break;
+                case 3:
+                    
+                    break;
+                case 4:
+                    
+                    break;
+                case 5:
+                    
+                    break;
+            }
+        }
+
+/*APARTADO DE VENTA*/
+            
+ 

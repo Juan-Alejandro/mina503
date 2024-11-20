@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>
-            Iniciar Sesión
+            Ventas
         </title>
         <meta charset="utf-8">
         <meta 
@@ -19,11 +19,84 @@
         >
     </head>
     <body>
-        <aside class="aside_ventas">
-            a
-        </aside>
         <main class="main_ventas">
-            a
+            <div class="div_cont_nav_ventas">
+                <div class="ico_ham_ventas">
+                    <i 
+                        class='bx bx-cog' 
+                        id="icon_set_ventas"
+                    >
+                    </i>
+                </div>
+                <div class="div_cuerpoops_ventas">
+                    <div class="div_opcion_venta">
+                        <div class="div_redirect_venta" onclick="openSectionAside('1')">
+                            <i 
+                               class='bx bx-store' 
+                               id="icon_venta_venta"
+                            >
+                            </i>
+                            <p class="p_redirect_venta">
+                                Ventas
+                            </p>
+                        </div>
+                        <div class="div_redirect_venta" onclick="openSectionAside('2')">
+                            <i 
+                               class='bx bxs-user-badge' 
+                               id="icon_venta_venta"
+                            >
+                            </i>
+                            <p class="p_redirect_venta">
+                                Gestión de usuarios
+                            </p>
+                        </div>
+                        <div class="div_redirect_venta">
+                            <i 
+                               class='bx bxs-archive' 
+                               id="icon_venta_venta"
+                            >
+                            </i>
+                            <p class="p_redirect_venta">
+                                Productos e inventario
+                            </p>
+                        </div>
+                        <div class="div_redirect_venta">
+                            <i 
+                               class='bx bx-donate-heart' 
+                               id="icon_venta_venta"
+                            >
+                            </i>
+                            <p class="p_redirect_venta">
+                                Historial de donaciones
+                            </p>
+                        </div>
+                        <div class="div_redirect_venta">
+                            <i 
+                               class='bx bx-history' 
+                               id="icon_venta_venta"
+                            >
+                            </i>
+                            <p class="p_redirect_venta">
+                                Historial de ventas
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="div_cuerpoprin_ventas">
+                    a
+                </div>
+            </div>
         </main>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const icoham_ventas = document.querySelector(".ico_ham_ventas");
+                const lisnav_ventas = document.querySelector(".div_cuerpoops_ventas");
+                icoham_ventas.addEventListener("click", function () {
+                    lisnav_ventas.classList.toggle("active");
+                });
+            });
+        </script>
+        <script src="../../../javascript/index.js">
+        </script>
     </body>
 </html>
