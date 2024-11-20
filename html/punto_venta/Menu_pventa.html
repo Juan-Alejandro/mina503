@@ -31,7 +31,7 @@
                 <div class="div_perfil_pventa">
                     <div class="div_perfpc_pventa">
                         <p id="p_perfbienv_pventa">
-                            BIENVENIDO ADMINISTRADOR
+                            BIENVENIDO 
                         </p>    
                         <img 
                              id="img_perfil_pventa" 
@@ -63,6 +63,7 @@
                                value="" 
                                class="input_clas_pventa accs_clas_pventa" 
                                name="rango"
+                               readonly
                         >
                         <br>
                         <label 
@@ -77,6 +78,7 @@
                                value="" 
                                class="input_clas_pventa accs_clas_pventa" 
                                name="usuario"
+                               readonly
                         >
                         <br>
                         <label 
@@ -91,6 +93,7 @@
                                value="" 
                                class="input_clas_pventa accs_clas_pventa" 
                                name="contra"
+                               readonly
                         >
                         <button 
                                 class="btn_cerrses_pventa" 
@@ -217,16 +220,7 @@
         </main>
     </body>
     <script>
-        function cerrarsecion() {
-            const confirmacion = confirm("¿Estás seguro de que deseas abandonar el sitio?");
-                if(!confirmacion) {
-                    event.preventDefault();
-                    
-                }else{
-                    window.open("../inicio_secion.html","_self");
-                }
-            
-        }
+
     </script>
     <script src="../../javascript/index.js"> 
     </script>

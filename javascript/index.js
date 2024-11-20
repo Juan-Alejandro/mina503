@@ -17,14 +17,19 @@
                     event.preventDefault();
                 }
             }
+            function pregunta_redireccionadoris(){
+                const confirmacion = confirm("¿Estás seguro de que deseas abandonar el sitio?");
+                if(!confirmacion) {
+                    event.preventDefault();
+                }else {
+                    window.open("html/inicio_secion.html","_self");
+                }
+            }
+            
             /*ABRIR COSAS*/
             function abrirstandby() {
                 window.open("html/standby.html","_self");
             }
-            function abriris() {
-                window.open("html/inicio_secion.html","_self")
-            }
-
 /*MENU DE PUNTO DE VENTA*/
             /*MENU DESPLEGABLE MOVIL*/
             document.addEventListener("DOMContentLoaded", function () {
@@ -59,3 +64,15 @@
                         imgg.src = Imgalm;
                     }
                 });
+            /*RETORNO A INDEX*/
+        function cerrarsecion() {
+            const confirmacion = confirm("¿Estás seguro de que deseas abandonar el sitio?");
+                if(!confirmacion) {
+                    event.preventDefault();
+                    
+                }else{
+                    window.open("../inicio_secion.html","_self");
+                }
+            
+        }
+    

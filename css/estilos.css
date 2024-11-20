@@ -17,6 +17,13 @@
     src: url(../fuentes/Merriweather-Regular.ttf) format('truetype');
 }
 /*CONFIGURACIONES HTML*/
+body {
+    background: white;
+}
+.body_index {
+    display: flex;
+    flex-direction: column;
+}
 
 /*Apartado para pc*/
     /*CABECERA*/
@@ -43,10 +50,11 @@
 .btn_buscar_cabecera{
     background: none;
     border: none;
-    margin-top: 2vh;
+    margin-top: 3.5vh;
 }
 .img_lupa_cabecera {
     height: 50px;
+    
 }
 .img_lupa_cabecera:hover {
     filter: drop-shadow(4px 2px 1px white);
@@ -56,18 +64,21 @@
     width: 300px;
     border-radius: 10px;
     vertical-align: top;
-    margin-top: 3vh;
+    margin-top: 4vh;
     font-size: 20px;
 }
 .bxs-user {
+    position:absolute;
     font-size: 5vh;
-    margin-left: 10vh;
+    margin-left: 5vh;
+    margin-top: 3vh;
     border-radius: 100%;
     color: white;
     border: 2px solid black;
     background: black;
     padding: 1vh;
     text-shadow: 3px 2px 10px white;
+ 
     
 }
 #li_solomovil_principal {
@@ -173,9 +184,8 @@
     flex-wrap: wrap;
 }
 .div_social_principal {
-    height: 120px;
     border: 1px solid black;
-    flex:1 0 160px;
+    flex:2  0 200px;
     margin: 10px;
     margin-top: 6vh;
 }
@@ -491,11 +501,14 @@
 }
 .div_btns_pventa {
     flex: 1 1 200px;
-    max-height: 200px;
+    height: auto;
     border: 1px solid black;
     background: white;
     display: flex;
     flex-direction: row;
+    align-content: center;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
 }
 #icon_venta_pventa {
     font-size: 30vh;
@@ -525,6 +538,7 @@
     max-width: 160px;
 }
 .p_btns_pvetna {
+    flex-wrap: wrap;
     padding: 2vh;
     background: whitesmoke;
     font-size: 1rem;
@@ -538,6 +552,7 @@
 #icon_photo_pventa {
     font-size: 10vh;
     color: #ffcc00;
+
 }
 .lbl_clas_pventa {
     font-size: 4vh;
@@ -596,8 +611,6 @@
 .btn_cerrses_pventa:active {
     transform: scale(.95);
 }
-
-
     /*COSAS DE CELULAR*/
 .div_contham_venta {
     background: #333;
@@ -623,6 +636,17 @@
     font-size: 30px;
 }
 
+/*APARTADO DE VENTAS*/
+.aside_ventas {
+    float: left;
+    width: 20%;
+    background: blue;
+}
+.main_ventas {
+    float: right;
+    width: 80%;
+    background: red;
+}
 
 
 
@@ -658,7 +682,7 @@
         flex-direction: column;
         overflow: hidden;
         height: 0;
-        transition: height 2s ease;
+        transition: height 1s ease;
     }
     .lis_nav_cabecera.active {
         height: 236px;
