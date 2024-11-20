@@ -611,6 +611,9 @@ body {
 .btn_cerrses_pventa:active {
     transform: scale(.95);
 }
+.btn_cerrarses_movil_pventa {
+    display: none;
+}
     /*COSAS DE CELULAR*/
 .div_contham_venta {
     background: #333;
@@ -658,11 +661,22 @@ body {
     position: fixed;
     background: black;
     padding-top: 3vh;
-
+    overflow-y: scroll;
+    ::-webkit-scrollbar {
+    width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+    background: black; 
+    }
+    ::-webkit-scrollbar-thumb {
+    background: red;
+    border-radius: 5px;
+    border: 1px solid black;
+    }
 }
 #icon_venta_venta {
     color: white;
-    font-size: 15vh;
+    font-size: 13vh;
 }
 .div_opcion_venta {
     width: 100%;
@@ -673,14 +687,12 @@ body {
 .div_redirect_venta {
     text-align: center;
     width: 100%;
-    flex: 1 1 20vh;
+    flex: 1 1 10vh;
 }
 .p_redirect_venta {
     color: white;
     border-bottom: 2px solid white;
 }
-
-    /*COSAS DE CELULAR*/
 .div_cont_nav_ventas {
     background: lightgray;
     color: black;
@@ -884,11 +896,29 @@ body {
     .accs_clas_pventa {
         width: 180%;
     }
-/*VENTA MENU*/
+    .btn_cerrses_pventa {
+        display: none;
+    }
+    .btn_cerrarses_movil_pventa {
+        width: 6.5em;
+        height: 2.3em;
+        margin: 0.5em;
+        background: red;
+        color: white;
+        border: none;
+        border-radius: 0.625em;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;     
+    }
+    /*VENTA MENU*/
     .div_cuerpoprin_ventas {
         width: 100%;
     }
-    /*CONFIGURACIONES PARA LOS MENUS DE SECCIONES (APARTADOS)*/
+/*CONFIGURACIONES PARA LOS MENUS DE SECCIONES (APARTADOS)*/
     .ico_ham_ventas {
         display: flex;
     }
@@ -902,6 +932,7 @@ body {
         transition: width .5s ease;
         text-align: center;
         height: 100%;
+        
     }
     .div_cuerpoops_ventas.active {
         width: 50%;

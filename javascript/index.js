@@ -105,6 +105,9 @@
                 case 5:
                     
                     break;
+                case 6:
+                    window.open("../Menu_pventa.html","_self");
+                    break;
             }
         }
 

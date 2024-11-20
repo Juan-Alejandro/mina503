@@ -120,6 +120,12 @@
                                 </span>
                             </div>
                         </button>
+                        <button 
+                                class="btn_cerrarses_movil_pventa" 
+                                onclick="cerrarsecion()"
+                        >
+                            Cerrar Sesión
+                        </button>
                     </div>
                 </div>
                 <div class="div_cuerpoprin_pventa">
@@ -239,7 +245,7 @@
                 const icoham_pventa = document.querySelector(".ico_ham_pventa");
                 const lisnav_pventa = document.querySelector(".div_perfil_pventa");
                 icoham_pventa.addEventListener("click", function () {
-                    lisnav.classList.toggle("active");
+                    lisnav_pventa.classList.toggle("active");
                 });
             });
     </script>
