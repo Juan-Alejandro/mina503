@@ -640,11 +640,15 @@ body {
 .aside_ventas {
     float: left;
     width: 20%;
+    height: 100%;
+    position: fixed;
     background: blue;
 }
 .main_ventas {
     float: right;
     width: 80%;
+    height: auto;
+    
     background: red;
 }
 
