@@ -90,11 +90,17 @@
         </header>
         <main class="main">
             <div class="div_img_principal">
-                <img
-                    src="imagenes/imagen_pag_principal.jpg"
+                <video
+                    src="imagenes/videomina.mp4"
                     class="img_ini_principal"
                     title="Mina"
+                    id="video_principal"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
                 >
+                </video>
             </div>
             <div class="div_conocenos_principal" id="conocenos">
                 <p id="p_conocenos_principal">
@@ -243,6 +249,7 @@
             </p>
         </footer>
         <script>
+       
             document.addEventListener("DOMContentLoaded", function () {
                 const icohamindex = document.querySelector(".ico_ham");
                 const lisnav_index = document.querySelector(".lis_nav_cabecera");
@@ -250,6 +257,7 @@
                     lisnav_index.classList.toggle("active");
                 });
             });
+            
         </script>
         <script src="javascript/index.js">
         </script>

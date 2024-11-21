@@ -676,7 +676,7 @@ body {
 }
 #icon_venta_venta {
     color: white;
-    font-size: 13vh;
+    font-size: 10vh;
 }
 .div_opcion_venta {
     width: 100%;
@@ -687,7 +687,7 @@ body {
 .div_redirect_venta {
     text-align: center;
     width: 100%;
-    flex: 1 1 10vh;
+    flex: 1 1 auto;
 }
 .p_redirect_venta {
     color: white;
@@ -869,7 +869,7 @@ body {
         overflow: hidden;
         height: 0;
         width: 0;
-        transition: height 2s ease;
+        transition: height 1s ease;
         text-align: center;
         width: 100%;
     }
@@ -940,10 +940,10 @@ body {
         height: 100%;
     }
     #icon_venta_venta {
-        font-size: 10vh;
+        font-size: 8vh;
     }
     .div_redirect_venta {
-        flex: 1 1 15vh;
+        flex: 1 1 auto;
     }
     
 }
