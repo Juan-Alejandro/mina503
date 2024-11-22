@@ -15,6 +15,9 @@
 @font-face {
     font-family: 'Merriweather';
     src: url(../fuentes/Merriweather-Regular.ttf) format('truetype');
+    
+    font-family: 'Grotesk';
+    src: url(../fuentes/HostGrotesk-Light.ttf) format('truetype')
 }
 /*CONFIGURACIONES HTML*/
 body {
@@ -646,10 +649,123 @@ body {
 
 }
 .div_cuerpoprin_ventas {
-    background: yellow;
+    /*background: #F9D308;*/
+    background: lightgray;
     float: right;
     width: 80%;
     color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.div_princont_ventas {
+    flex: 1;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.h1_prinnombre_ventas {
+    font-family: monospace;
+    text-align: center;
+    font-size: 5vh;
+    border-bottom: 3px solid black;
+}
+.div_prin_tablaprod_ventas {
+    border: 2px solid black;
+    flex: 2 0 60vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+
+}
+.div_tablaprod_ctroverflow_ventas {
+    border: 1px solid;
+    height: 300px;
+    margin-top: 5vh;
+    overflow-y: auto;
+}
+.table_tablaprod_ventas {
+    width: 100%;
+    background: white;
+    font-family: 'Merriweather';
+    border-collapse: collapse;
+}
+.td_codigo_ventas {
+    width: 5%;
+    text-align: center;
+    background: gray;
+}
+.table_tablaprod_ventas thead tr th {
+    border: 2px solid black;
+    background: lightgray;
+}
+.table_tablaprod_ventas tbody tr td {
+    border: 2px solid black;
+    height: 5vh;
+    font-size: 3vh;
+}
+.div_prin_dtcarro_ventas {
+    border: 3px solid black;
+    flex: 1 1 30vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+}
+.div_carrosinputs_ventas {
+    display: flex;
+    flex-direction: row;
+}
+.div_carrosinputs_ventas label {
+    font-size: 4vh;
+    font-family: 'Grotesk';
+}
+.div_carrosinputs_1_ventas {
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    
+   
+}
+.div_carrosinputs_1_ventas input[type="text"] {
+    height: auto;
+    width: 35vh;
+    font-size: 8vh;
+    margin-top: 10px;
+}
+.div_carrosinputs_2_ventas {
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+}
+.div_carrosinputs_2_ventas input[type="color"]{
+    background: white;
+    width: 10vh;
+    height: 10vh;
+    margin-top: 10px;
+}
+
+.div_prin_dona_ventas {
+    flex: 1 1 20vh;
+    background: green;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    
+}
+.div_prindonaci_ventas {
+    background: gray;
+}
+.div_donainputs_ventas {
+    display: flex;
+    flex-direction: row;
+}
+.div_donainputs_ventas p {
+    flex: 1;
+    font-size: 5vh;
+    font-family: 'Grotesk';
+}
+.div_prin_cantflet_ventas {
+    flex: 1;
+}
+.div_prin_total_ventas {
+    flex: 1;
 }
 
 
@@ -918,6 +1034,7 @@ body {
     /*VENTA MENU*/
     .div_cuerpoprin_ventas {
         width: 100%;
+        flex-direction: column;
     }
 /*CONFIGURACIONES PARA LOS MENUS DE SECCIONES (APARTADOS)*/
     .ico_ham_ventas {
@@ -938,12 +1055,14 @@ body {
     .div_cuerpoops_ventas.active {
         width: 50%;
         height: 100%;
+      
     }
     #icon_venta_venta {
         font-size: 8vh;
     }
     .div_redirect_venta {
         flex: 1 1 auto;
+        
     }
     
 }

@@ -105,11 +105,172 @@
                     </div>
                 </div>
                 <div class="div_cuerpoprin_ventas">
-                    a
+                    <div class="div_princont_ventas">
+                        <div class="div_prin_tablaprod_ventas">
+                            <h1 class="h1_prinnombre_ventas">
+                                Tabla de productos
+                            </h1>
+                            <div class="div_tablaprod_ctroverflow_ventas">
+                                <table class="table_tablaprod_ventas">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                            </th>
+                                            <th class="td_codigo_ventas">
+                                                Código
+                                            </th>
+                                            <th>
+                                                Producto
+                                            </th>
+                                            <th>
+                                                Precio unitario
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td class="td_codigo_ventas">
+                                                <input 
+                                                       type="radio" 
+                                                       name="material"
+                                                >
+                                            </td>
+                                            <td>a</td>
+                                            <td>b</td>
+                                            <td>c</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="div_prin_dtcarro_ventas">
+                            <h1 class="h1_prinnombre_ventas">
+                                Datos del auto/conductor
+                            </h1>
+                            <div class="div_carrosinputs_ventas">
+                                <div class="div_carrosinputs_1_ventas">
+                                    <input 
+                                           type="text" 
+                                           maxlength="7"
+                                           name="placas_carro"
+                                           placeholder="Placas"
+                                           id="id_placas_venta"
+                                    >
+                                    <label>
+                                        <span style="transition-delay:0ms">U</span>
+                                        <span style="transition-delay:50ms">s</span>
+                                        <span style="transition-delay:100ms">e</span>
+                                        <span style="transition-delay:150ms">r</span>
+                                        <span style="transition-delay:200ms">n</span>
+                                        <span style="transition-delay:250ms">a</span>
+                                        <span style="transition-delay:300ms">m</span>
+                                        <span style="transition-delay:350ms">e</span>
+                                    </label>
+                                </div>
+                                <div class="div_carrosinputs_2_ventas">
+                                    <label for="color_carro">
+                                        Color del Camión:
+                                    </label>
+                                    <br>
+                                    <input 
+                                           type="color" 
+                                           name="color_carro"
+                                    >
+                                </div>
+                            </div>
+                        </div>
+                        <div class="div_prin_dona_ventas">
+                            <h1 class="h1_prinnombre_ventas">
+                                Donaciones
+                            </h1>
+                            <div class="div_prindonaci_ventas">
+                                <div class="div_donainputs_ventas">
+                                    <p>
+                                    <label>Si</label>
+                                    <input 
+                                           type="radio" 
+                                           name="donacion_carro" 
+                                           value="yes"
+                                           onclick="prenapaginputs(true)"
+                                    >
+                                    </p>
+                                    <p>
+                                    <label>No</label>
+                                    <input 
+                                           type="radio" 
+                                           name="donacion_carro" 
+                                           value="no"
+                                           onclick="prenapaginputs(false)"
+                                    >
+                                    </p>    
+                                    <div id="id_inputsdesacdona_ventas">
+                                        <input 
+                                               type="number"
+                                               class="input_disableddona_ventas" 
+                                               id="input_disable_ventas"
+                                               type="number"
+                                               disabled
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div_princont_ventas">
+                        <div class="div_prin_cantflet_ventas">
+                            <h1 class="h1_prinnombre_ventas">
+                                Cantidad
+                            </h1>
+                            <input type="number" value="1">
+                            <h1 class="h1_prinnombre_ventas">Flete</h1>
+                            <label>Si</label>
+                            <input type="radio" name="flete_radio">
+                            <label>No</label>
+                            <input type="radio" name="flete_radio">
+                        </div>
+                        <div class="div_prin_total_ventas">
+                            <h1 class="h1_prinnombre_ventas">
+                                Cobro
+                            </h1>
+                            <p>
+                                Subtotal:
+                            </p>
+                            <p>
+                                IVA:
+                            </p>
+                            <p>
+                                Donación:
+                            </p>
+                            <p>
+                                Flete:
+                            </p>
+                            <p>
+                                Total:
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </main>
         <script>
+            function guionOninput() {
+                const placa = document.getElementById('id_placas_venta');
+                let value = placa.value.replace(/-/g, "");
+                let formateovalor = "";
+                
+                for(let i = 0; i<value.length; i++) {
+                    if(i > 0 && i % 4 === 0) {
+                        formateovalor += "-";
+                    }
+                    formateovalor += value[i];
+                }
+                placa.value = formateovalor;
+            }
+            const campodeentrada = document.getElementById('id_placas_venta');
+            campodeentrada.addEventListener("blur",guionOninput);
+            
+        
+            
             document.addEventListener("DOMContentLoaded", function () {
                 const icoham_ventas = document.querySelector(".ico_ham_ventas");
                 const lisnav_ventas = document.querySelector(".div_cuerpoops_ventas");
