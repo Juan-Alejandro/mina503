@@ -30,7 +30,10 @@
                 </div>
                 <div class="div_cuerpoops_ventas">
                     <div class="div_opcion_venta">
-                        <div class="div_redirect_venta" onclick="openSectionAside('1')">
+                        <div 
+                             class="div_redirect_venta" 
+                             onclick="openSectionAside('1')"
+                        >
                             <i 
                                class='bx bx-store' 
                                id="icon_venta_venta"
@@ -149,6 +152,9 @@
                             </h1>
                             <div class="div_carrosinputs_ventas">
                                 <div class="div_carrosinputs_1_ventas">
+                                    <label>
+                                        Placas del carro
+                                    </label>
                                     <input 
                                            type="text" 
                                            maxlength="7"
@@ -156,16 +162,6 @@
                                            placeholder="Placas"
                                            id="id_placas_venta"
                                     >
-                                    <label>
-                                        <span style="transition-delay:0ms">U</span>
-                                        <span style="transition-delay:50ms">s</span>
-                                        <span style="transition-delay:100ms">e</span>
-                                        <span style="transition-delay:150ms">r</span>
-                                        <span style="transition-delay:200ms">n</span>
-                                        <span style="transition-delay:250ms">a</span>
-                                        <span style="transition-delay:300ms">m</span>
-                                        <span style="transition-delay:350ms">e</span>
-                                    </label>
                                 </div>
                                 <div class="div_carrosinputs_2_ventas">
                                     <label for="color_carro">
@@ -200,6 +196,7 @@
                                            type="radio" 
                                            name="donacion_carro" 
                                            value="no"
+                                           
                                            onclick="prenapaginputs(false)"
                                     >
                                     </p>    

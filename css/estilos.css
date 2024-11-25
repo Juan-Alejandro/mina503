@@ -721,8 +721,6 @@ body {
     flex: 1;
     flex-direction: column;
     text-align: center;
-    
-   
 }
 .div_carrosinputs_1_ventas input[type="text"] {
     height: auto;
