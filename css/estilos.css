@@ -17,7 +17,10 @@
     src: url(../fuentes/Merriweather-Regular.ttf) format('truetype');
     
     font-family: 'Grotesk';
-    src: url(../fuentes/HostGrotesk-Light.ttf) format('truetype')
+    src: url(../fuentes/HostGrotesk-Light.ttf) format('truetype');
+    
+    font-family: 'Geismono';
+    src: url(../fuentes/GeistMono-Regular.ttf) format('truetype');        
 }
 /*CONFIGURACIONES HTML*/
 body {
@@ -648,9 +651,16 @@ body {
     height: auto;    
 
 }
+#h1_tituloapartado_ventas {
+    background: #F9D308;
+    float: right;
+    width: 80%;
+    text-align: center;
+    font-family: 'Geismono';
+}
 .div_cuerpoprin_ventas {
     /*background: #F9D308;*/
-    background: lightgray;
+    background: white;
     float: right;
     width: 80%;
     color: black;
@@ -678,21 +688,64 @@ body {
 
 }
 .div_tablaprod_ctroverflow_ventas {
-    border: 1px solid;
+    border: 3px solid;
     height: 300px;
     margin-top: 5vh;
     overflow-y: auto;
+    background: #ffcc00;
 }
 .table_tablaprod_ventas {
     width: 100%;
     background: white;
     font-family: 'Merriweather';
     border-collapse: collapse;
+    
 }
 .td_codigo_ventas {
     width: 5%;
     text-align: center;
-    background: gray;
+    background: #6e6e6e;
+    
+}
+.div_radio_input_ventas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 1vh;
+    margin-right: -1vh;
+}
+.input_radio_codigo_ventas {
+    appearance: none;
+    width: 2em;
+    height: 2em;
+    background-color: black;
+    border-radius: 50%;
+    transition: .4s ease-in-out;
+}
+.input_radio_codigo_ventas:hover {
+    scale: 1.2;
+    cursor: pointer;
+    box-shadow: none;
+}
+.circle {
+    position: relative;
+    top: 0.01em;
+    left: -1em;
+    width: 0.6em;
+    height: 0.6em;
+    background-color: yellow;
+    scale: 0;
+    border-radius: 10px;
+    transition: .4s ease-in-out;
+    border: 1px solid black;
+}
+.input_radio_codigo_ventas:checked {
+    box-shadow: none;
+    border: 2px solid yellow;
+}
+.input_radio_codigo_ventas:checked + .circle {
+    transform: rotate(360deg);
+    scale: 1;
 }
 .table_tablaprod_ventas thead tr th {
     border: 2px solid black;
@@ -733,32 +786,47 @@ body {
     flex-direction: column;
     text-align: center;
 }
-.div_carrosinputs_2_ventas input[type="color"]{
-    background: white;
-    width: 10vh;
-    height: 10vh;
+.div_carrosinputs_2_ventas input[type="text"]{
+    height: auto;
+    width: 35vh;
+    font-size: 8vh;
     margin-top: 10px;
 }
-
 .div_prin_dona_ventas {
     flex: 1 1 20vh;
-    background: green;
+    background: white;
     padding-left: 2vh;
     padding-right: 2vh;
-    
+    border: 2px solid black;
 }
 .div_prindonaci_ventas {
     background: gray;
 }
 .div_donainputs_ventas {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
-.div_donainputs_ventas p {
-    flex: 1;
+
+
+.div_inputsradio_sn_ventas {
+    flex 1;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid white;
+    padding-left: 2vh;
+    align-items: center;
+}
+.p_radiobutton_cont_ventas {
+    flex: 1 1;
+    width: 50%;
     font-size: 5vh;
     font-family: 'Grotesk';
+    
 }
+.input_radio_dona_ventas {
+    
+}
+
 .div_prin_cantflet_ventas {
     flex: 1;
 }

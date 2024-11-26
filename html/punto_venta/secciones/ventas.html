@@ -107,6 +107,7 @@
                         </div>
                     </div>
                 </div>
+                <h1 id="h1_tituloapartado_ventas">Apartado Punto de Venta</h1>
                 <div class="div_cuerpoprin_ventas">
                     <div class="div_princont_ventas">
                         <div class="div_prin_tablaprod_ventas">
@@ -133,10 +134,29 @@
                                     <tbody>
                                         <tr>
                                             <td class="td_codigo_ventas">
-                                                <input 
-                                                       type="radio" 
-                                                       name="material"
-                                                >
+                                                <div class="div_radio_input_ventas">
+                                                    <input 
+                                                           type="radio" 
+                                                           name="material"
+                                                           class="input_radio_codigo_ventas"
+                                                    >
+                                                    <div class="circle"></div>
+                                                </div>
+                                            </td>
+                                            <td>a</td>
+                                            <td>b</td>
+                                            <td>c</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="td_codigo_ventas">
+                                                <div class="div_radio_input_ventas">
+                                                    <input 
+                                                           type="radio" 
+                                                           name="material"
+                                                           class="input_radio_codigo_ventas"
+                                                    >
+                                                    <div class="circle"></div>
+                                                </div>
                                             </td>
                                             <td>a</td>
                                             <td>b</td>
@@ -169,7 +189,7 @@
                                     </label>
                                     <br>
                                     <input 
-                                           type="color" 
+                                           type="text" 
                                            name="color_carro"
                                     >
                                 </div>
@@ -181,26 +201,38 @@
                             </h1>
                             <div class="div_prindonaci_ventas">
                                 <div class="div_donainputs_ventas">
-                                    <p>
-                                    <label>Si</label>
-                                    <input 
-                                           type="radio" 
-                                           name="donacion_carro" 
-                                           value="yes"
-                                           onclick="prenapaginputs(true)"
-                                    >
-                                    </p>
-                                    <p>
-                                    <label>No</label>
-                                    <input 
-                                           type="radio" 
-                                           name="donacion_carro" 
-                                           value="no"
-                                           
-                                           onclick="prenapaginputs(false)"
-                                    >
-                                    </p>    
+                                    <div class="div_inputsradio_sn_ventas">
+                                        <p class="p_radiobutton_cont_ventas">
+                                        
+                                            <input 
+                                                   type="radio" 
+                                                   name="donacion_carro" 
+                                                   value="yes"
+                                                   onclick="prenapaginputs(true)"
+                                                   class="input_radio_dona_ventas"
+                                            >
+                                        <label class="lbl_radio_dona_ventas">
+                                            <span class="span_radio_dona_ventas">
+                                            </span>
+                                            Si
+                                        </label>
+                                        </p>
+                                        <p class="p_radiobutton_cont_ventas">
+                                            <input 
+                                                   type="radio" 
+                                                   name="donacion_carro" 
+                                                   value="no"
+                                                   onclick="prenapaginputs(false)"
+                                                   class="input_radio_dona_ventas"
+                                            >
+                                        <label class="lbl_radio_dona_ventas">
+                                            <span class="span_radio_dona_ventas"></span>
+                                            No
+                                        </label>
+                                        </p> 
+                                    </div>
                                     <div id="id_inputsdesacdona_ventas">
+                                        
                                         <input 
                                                type="number"
                                                class="input_disableddona_ventas" 
@@ -244,6 +276,7 @@
                             <p>
                                 Total:
                             </p>
+                            <button>Ticket</button>
                         </div>
                     </div>
                 </div>
