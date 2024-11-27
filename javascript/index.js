@@ -118,10 +118,10 @@
                 const inp = document.getElementById('input_disable_ventas');
                    if(enable){
                        inp.disabled=false;
-                       inp.classList.remove('input_disableddona_ventas');
+                       
                    } else {
                        inp.disabled=true;
-                       inp.classList.add('input_disableddona_ventas');
+                       
                    }
             }
 

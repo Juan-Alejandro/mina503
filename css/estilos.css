@@ -756,6 +756,7 @@ body {
     height: 5vh;
     font-size: 3vh;
 }
+
 .div_prin_dtcarro_ventas {
     border: 3px solid black;
     flex: 1 1 30vh;
@@ -764,33 +765,47 @@ body {
 }
 .div_carrosinputs_ventas {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap:30px;
 }
 .div_carrosinputs_ventas label {
     font-size: 4vh;
     font-family: 'Grotesk';
 }
 .div_carrosinputs_1_ventas {
+    margin-top: 2%;
     flex: 1;
-    flex-direction: column;
-    text-align: center;
+    flex-direction: row;
+    align-content: center;
 }
 .div_carrosinputs_1_ventas input[type="text"] {
     height: auto;
-    width: 35vh;
-    font-size: 8vh;
-    margin-top: 10px;
+    width: 30vh;
+    font-size: 5vh;
+    margin-left: 5%;
+    
 }
 .div_carrosinputs_2_ventas {
     flex: 1;
-    flex-direction: column;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;    
+    flex-direction: row;
+    gap:10px;
+    
 }
 .div_carrosinputs_2_ventas input[type="text"]{
     height: auto;
-    width: 35vh;
-    font-size: 8vh;
+    width: 30vh;
+    font-size: 5vh;
     margin-top: 10px;
+}
+.div_carrosinputs_2_ventas input[type="color"] {
+    height: auto;
+    width: 10vh;
+    margin-top: 10px;
+}
+.div_carrosinputs_2_ventas label {
+    margin-top: 2%;
 }
 .div_prin_dona_ventas {
     flex: 1 1 20vh;
@@ -800,20 +815,17 @@ body {
     border: 2px solid black;
 }
 .div_prindonaci_ventas {
-    background: gray;
+    background: white;
 }
 .div_donainputs_ventas {
     display: flex;
     flex-direction: column;
 }
-
-
 .div_inputsradio_sn_ventas {
     flex 1;
     display: flex;
     flex-direction: row;
     border-bottom: 1px solid white;
-    padding-left: 2vh;
     align-items: center;
 }
 .p_radiobutton_cont_ventas {
@@ -821,20 +833,117 @@ body {
     width: 50%;
     font-size: 5vh;
     font-family: 'Grotesk';
-    
+    text-align: center;
 }
 .input_radio_dona_ventas {
-    
+    scale:1.5;
+}
+#id_inputsdesacdona_ventas {
+    display: flex;
+    flex-direction: row;    
+}
+.div_inputsdesac_cantidad_ventas {
+    text-align: center;
+    align-content: center;
+    border-bottom: 3px solid black;
+
+    width: 100%;
+}
+.lbl_inputsdesac_cant_ventas {
+    font-size: 5vh;
+}
+.input_disableddona_ventas {
+    font-size: 5vh;
+    width: 20vh;
 }
 
 .div_prin_cantflet_ventas {
-    flex: 1;
+    flex: .5;
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    
+}
+.div_prin_cantflet_ventas div {
+    width: 50%; 
+    border-right: 2px solid black;
+}
+.div_prin_cantflet_ventas div p {
+    padding: 5vh;
+}
+.div_prin_cantflet_ventas div label {
+    font-size: 3rem;
+    flex-wrap: wrap;
+}
+.input_metroscant_ventas {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom: 4px solid lightgray;
+    width: 40%;
+    font-size: 4rem;
+    margin-right:5vh;
+}
+.p_fletesSN_ventas {
+    align-content: center;
+    text-align: center;
+}
+.input_radio_fleteSN_ventas {
+    scale:2;
 }
 .div_prin_total_ventas {
     flex: 1;
+    padding: 10px;
+    border-right: 2px solid black;
 }
 
-
+.div_prin_total_ventas p {
+    font-size: 3rem;
+}
+#btn_ticket_ventas {
+    float: right;
+    width: 80%;
+    height: 50px;
+    background: #ffcc00;
+    color: #fff;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    transition: background-color 1.5s ease;
+ 
+}
+#btn_ticket_ventas span {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: top 0.5s;
+}
+.span_btn_ticket1_ventas {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+.span_btn_ticket2_ventas {
+    position: absolute;
+    width: 100%;
+    top: 150%;
+    left: 0;
+    transform: translateY(-50%);
+}
+#btn_ticket_ventas:hover {
+    background: red;
+}
+#btn_ticket_ventas:hover .span_btn_ticket1_ventas {
+    top: -100%;
+}
+#btn_ticket_ventas:hover .span_btn_ticket2_ventas {
+    top: 50%;
+}
 /*CONFIGURACIONES PARA LOS MENUS DE SECCIONES (APARTADOS)*/
 .div_cuerpoops_ventas{
     float: left;
@@ -844,6 +953,7 @@ body {
     background: black;
     padding-top: 3vh;
     overflow-y: scroll;
+    z-index:2;
     ::-webkit-scrollbar {
     width: 10px;
     }
@@ -894,7 +1004,7 @@ body {
 
 
 /*Apartado para dispositivos moviles*/
-@media(max-width: 400px){
+@media(max-width: 500px){
 /*CABECERA*/
     .bus_cabecera {
         margin-top: 1vh;
@@ -1101,6 +1211,16 @@ body {
     .div_cuerpoprin_ventas {
         width: 100%;
         flex-direction: column;
+    }
+    #h1_tituloapartado_ventas {
+        float: none;
+        width: 100%;
+    }
+    .div_carrosinputs_ventas {
+        margin-bottom: 50px;
+    }
+    .div_prin_cantflet_ventas div label {
+        font-size: 2rem;
     }
 /*CONFIGURACIONES PARA LOS MENUS DE SECCIONES (APARTADOS)*/
     .ico_ham_ventas {

@@ -173,13 +173,13 @@
                             <div class="div_carrosinputs_ventas">
                                 <div class="div_carrosinputs_1_ventas">
                                     <label>
-                                        Placas del carro
+                                        Placas del carro:
                                     </label>
                                     <input 
                                            type="text" 
                                            maxlength="7"
                                            name="placas_carro"
-                                           placeholder="Placas"
+                                           placeholder="XXXX-XXX"
                                            id="id_placas_venta"
                                     >
                                 </div>
@@ -191,6 +191,10 @@
                                     <input 
                                            type="text" 
                                            name="color_carro"
+                                           placeholder="Ej. Rojo"
+                                    >
+                                    <input 
+                                           type="color"
                                     >
                                 </div>
                             </div>
@@ -212,8 +216,6 @@
                                                    class="input_radio_dona_ventas"
                                             >
                                         <label class="lbl_radio_dona_ventas">
-                                            <span class="span_radio_dona_ventas">
-                                            </span>
                                             Si
                                         </label>
                                         </p>
@@ -224,22 +226,29 @@
                                                    value="no"
                                                    onclick="prenapaginputs(false)"
                                                    class="input_radio_dona_ventas"
+                                                   checked
                                             >
                                         <label class="lbl_radio_dona_ventas">
-                                            <span class="span_radio_dona_ventas"></span>
                                             No
                                         </label>
                                         </p> 
                                     </div>
                                     <div id="id_inputsdesacdona_ventas">
-                                        
-                                        <input 
-                                               type="number"
-                                               class="input_disableddona_ventas" 
-                                               id="input_disable_ventas"
-                                               type="number"
-                                               disabled
-                                        >
+                                        <div class="div_inputsdesac_cantidad_ventas">
+                                            <label class="lbl_inputsdesac_cant_ventas">
+                                                Cantidad:
+                                            </label>
+                                        </div>
+                                        <div class="div_inputsdesac_cantidad_ventas">
+                                            <input 
+                                                   type="number"
+                                                   class="input_disableddona_ventas" 
+                                                   id="input_disable_ventas"
+                                                   type="number"
+                                                   disabled
+                                                   value="0"
+                                            >
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -247,15 +256,51 @@
                     </div>
                     <div class="div_princont_ventas">
                         <div class="div_prin_cantflet_ventas">
-                            <h1 class="h1_prinnombre_ventas">
-                                Cantidad
-                            </h1>
-                            <input type="number" value="1">
-                            <h1 class="h1_prinnombre_ventas">Flete</h1>
-                            <label>Si</label>
-                            <input type="radio" name="flete_radio">
-                            <label>No</label>
-                            <input type="radio" name="flete_radio">
+                            <div>
+                                <h1 class="h1_prinnombre_ventas">
+                                    Cantidad
+                                </h1>
+                                <p>
+                                    <input 
+                                           type="number" 
+                                           value="1"
+                                           class="input_metroscant_ventas"
+                                    >
+                                    <label>
+                                        mt3
+                                    </label>
+                                </p>
+                            </div>
+                            <div>
+                                <h1 class="h1_prinnombre_ventas">
+                                    Flete
+                                </h1>
+                                <label>
+                                    To be implemented
+                                </label>
+                                <!-- 
+                                <p class="p_fletesSN_ventas">
+                                    <label>
+                                        Si
+                                    </label>
+                                    <br>
+                                    <input 
+                                           type="radio" 
+                                           name="flete_radio"
+                                           class="input_radio_fleteSN_ventas"
+                                    >
+                                    <br>
+                                    <label>
+                                        No
+                                    </label>
+                                    <br>
+                                    <input 
+                                           type="radio" 
+                                           name="flete_radio"
+                                           class="input_radio_fleteSN_ventas"
+                                    >
+                                </p>-->
+                            </div>
                         </div>
                         <div class="div_prin_total_ventas">
                             <h1 class="h1_prinnombre_ventas">
@@ -263,20 +308,37 @@
                             </h1>
                             <p>
                                 Subtotal:
+                                <span>
+                                </span>
                             </p>
                             <p>
                                 IVA:
+                                <span>
+                                </span>
                             </p>
                             <p>
                                 Donación:
+                                <span>
+                                </span>
                             </p>
                             <p>
                                 Flete:
+                                <span>
+                                </span>
                             </p>
                             <p>
                                 Total:
+                                <span>
+                                </span>
                             </p>
-                            <button>Ticket</button>
+                            <button id="btn_ticket_ventas">
+                                <span class="span_btn_ticket1_ventas">
+                                    Ticket
+                                </span>
+                                <span class="span_btn_ticket2_ventas">
+                                    Pagar
+                                </span>
+                            </button>
                         </div>
                     </div>
                 </div>
