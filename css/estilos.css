@@ -651,13 +651,7 @@ body {
     height: auto;    
 
 }
-#h1_tituloapartado_ventas {
-    background: #F9D308;
-    float: right;
-    width: 80%;
-    text-align: center;
-    font-family: 'Geismono';
-}
+
 .div_cuerpoprin_ventas {
     /*background: #F9D308;*/
     background: white;
@@ -944,7 +938,117 @@ body {
 #btn_ticket_ventas:hover .span_btn_ticket2_ventas {
     top: 50%;
 }
+
+/*GESTION DE USUARIOS*/
+.div_cuerpoprin_gestion_usuarios {
+    width: 80%;
+    float: right;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+}
+.div_cuerpoprin_gestion_usuarios div {
+    margin: 2%;
+}
+.div_prin_busqueda_gestion_usuarios span {
+    font-size: 3vh;
+    font-family: 'Geismono';
+}
+.div_prin_busqueda_gestion_usuarios input[type="text"] {
+    font-family: 'Merriweather';
+    font-size: 3vh;
+}
+.div_prin_busqueda_gestion_usuarios{
+    flex: 1 1 10vh;
+
+    border-bottom: 3px solid black;
+    align-content: center;
+    
+}
+.div_prin_tabla_gestion_usuarios {
+    flex: 1 1 55vh;
+    background: white;
+}
+.div_prin_tablaoverflow_gestion_usuarios {
+    border: 1px solid black;
+    padding: 0;
+    height: 100%;
+    max-height: 50vh;
+    overflow-y: auto;
+    background: lightgray;
+}
+.table_gestion_usuarios {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+}
+.table_gestion_usuarios th {
+    border:3px solid black;
+    color: white;
+    background: black;
+    font-size: 1.2rem;
+}
+.table_gestion_usuarios td {
+    border:3px solid black;
+    font-size: 5vh;
+    
+}
+#id_gest_usuario {
+    width: 5%;
+}
+
+.div_prin_anadusu_gestion_usuarios {
+    flex: 1 1;
+}
+.btn_anadusu_gestion_usuarios {
+    width: 40%;
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: #F9D308;
+    border: 2px solid #F9D308;
+    border-radius: 34px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+}
+.btn_anadusu_gestion_usuarios::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: #F9D308;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+}
+.btn_anadusu_gestion_usuarios:hover::before {
+    scale:10;
+}
+.btn_anadusu_gestion_usuarios:hover {
+    color: #212121;
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(193, 163, 98,0.4);
+}
+.btn_anadusu_gestion_usuarios.active {
+    scale: 1;
+}
 /*CONFIGURACIONES PARA LOS MENUS DE SECCIONES (APARTADOS)*/
+#h1_tituloapartado_ventas {
+    background: #F9D308;
+    float: right;
+    width: 80%;
+    text-align: center;
+    font-family: 'Geismono';
+}
+
 .div_cuerpoops_ventas{
     float: left;
     width: 20%;
@@ -1221,6 +1325,49 @@ body {
     }
     .div_prin_cantflet_ventas div label {
         font-size: 2rem;
+    }
+    /*GESTION DE USUARIOS*/
+    .div_cuerpoprin_gestion_usuarios {
+        width: 100%;
+        float: none;
+        display: flex;
+        flex-wrap: wrap;   
+    }
+    .div_cuerpoprin_gestion_usuarios div {
+        margin: 0;
+    }
+    .div_prin_busqueda_gestion_usuarios {
+        width: 100%;
+    }
+    .div_prin_busqueda_gestion_usuarios span {
+        font-size: 3vh;
+    }
+    .div_prin_busqueda_gestion_usuarios input[type="text"] {
+        font-size: 2vh;
+    }
+    .div_prin_tablaoverflow_gestion_usuarios {
+        max-width: 55vh;
+        
+    }
+    .table_gestion_usuarios {
+        
+    }
+    .table_gestion_usuarios th , .table_gestion_usuarios td {
+        text-align: left;
+    }
+    .table_gestion_usuarios th {
+        text-align: right;
+        vertical-align: middle;
+        white-space: nowrap;
+    }
+    .table_gestion_usuarios tr {
+        display: flex;
+    }
+    .table_gestion_usuarios td {
+        flex: 1;
+    }
+    .table_gestion_usuarios th {
+        flex: 0 0 150px;
     }
 /*CONFIGURACIONES PARA LOS MENUS DE SECCIONES (APARTADOS)*/
     .ico_ham_ventas {

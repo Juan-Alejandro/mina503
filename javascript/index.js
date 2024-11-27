@@ -72,7 +72,7 @@
                     window.open("secciones/ventas.html","_self");
                     break;
                 case 2:
-                    window.open("../standby.html","_self");
+                    window.open("secciones/gestion_usuarios.html","_self");
                     break;
                 case 3:
                     
@@ -94,7 +94,7 @@
                     window.open("ventas.html","_self");
                     break;
                 case 2:
-                    window.open("../../standby.html","_self");
+                    window.open("gestion_usuarios.html","_self");
                     break;
                 case 3:
                     

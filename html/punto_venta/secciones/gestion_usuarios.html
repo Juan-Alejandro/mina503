@@ -55,7 +55,7 @@
                         </div>
                         <div 
                              class="div_redirect_venta" 
-                             onclick="openSectionAside('2')"
+                             onclick="openSectionAside('3')"
                         >
                             <i 
                                class='bx bxs-archive' 
@@ -68,7 +68,7 @@
                         </div>
                         <div 
                              class="div_redirect_venta" 
-                             onclick="openSectionAside('2')"
+                             onclick="openSectionAside('4')"
                         >
                             <i 
                                class='bx bx-donate-heart' 
@@ -81,7 +81,7 @@
                         </div>
                         <div 
                              class="div_redirect_venta" 
-                             onclick="openSectionAside('2')"
+                             onclick="openSectionAside('5')"
                         >
                             <i 
                                class='bx bx-history' 
@@ -107,12 +107,91 @@
                         </div>
                     </div>
                 </div>
+                <h1 id="h1_tituloapartado_ventas">Gestion de Usuarios</h1>
                 <div class="div_cuerpoprin_gestion_usuarios">
-                    
-                    
-                    
+                    <div class="div_prin_busqueda_gestion_usuarios">
+                        <span>
+                            Buscar usuario:
+                        </span>
+                        <input 
+                               type="text" 
+                               placeholder="Ej. Alejandro"
+                        >
+                    </div>
+                    <div class="div_prin_tabla_gestion_usuarios">
+                        <div class="div_prin_tablaoverflow_gestion_usuarios">
+                            <table class="table_gestion_usuarios">
+                                <thead>
+                                    <tr>
+                                        <th id="id_gest_usuario">
+                                            ID
+                                        </th>
+                                        <th>
+                                            Usuario
+                                        </th>
+                                        <th>
+                                            Contraseña
+                                        </th>
+                                        <th>
+                                            Rol
+                                        </th>
+                                        <th>
+                                            Editar
+                                        </th>
+                                        <th>
+                                            Limpiar
+                                        </th>
+                                        <th>
+                                            Eliminar
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            Alejandro
+                                        </td>
+                                        <td>
+                                            10
+                                        </td>
+                                        <td>
+                                            Administrador
+                                        </td>
+                                        <td>
+                                            EDI
+                                        </td>
+                                        <td>
+                                            LIM
+                                        </td>
+                                        <td>
+                                            ELIM
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="div_prin_anadusu_gestion_usuarios">
+                        <button class="btn_anadusu_gestion_usuarios">
+                            Añadir Usuario
+                        </button>
+                    </div>
                 </div>
             </div>
         </main>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const icoham_ventas = document.querySelector(".ico_ham_ventas");
+                const lisnav_ventas = document.querySelector(".div_cuerpoops_ventas");
+                icoham_ventas.addEventListener("click", function () {
+                    lisnav_ventas.classList.toggle("active");
+                });
+            });
+        </script>
+        <script src="../../../javascript/index.js">
+        </script>
     </body>
 </html>

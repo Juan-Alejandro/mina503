@@ -114,5 +114,16 @@
                 </div>
             </div>
         </main>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+                const icoham_ventas = document.querySelector(".ico_ham_ventas");
+                const lisnav_ventas = document.querySelector(".div_cuerpoops_ventas");
+                icoham_ventas.addEventListener("click", function () {
+                    lisnav_ventas.classList.toggle("active");
+                });
+            });
+        </script>
+        <script src="../../../javascript/index.js">
+        </script>
     </body>
 </html>
