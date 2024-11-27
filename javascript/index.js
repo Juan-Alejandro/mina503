@@ -75,13 +75,13 @@
                     window.open("secciones/gestion_usuarios.html","_self");
                     break;
                 case 3:
-                    
+                    window.open("secciones/productos_inventario.html","_self");
                     break;
                 case 4:
-                    
+                    window.open("secciones/historial_donaciones.html","_self");
                     break;
                 case 5:
-                    
+                    window.open("secciones/historial_ventas.html","_self");
                     break;
             }
         }
@@ -97,13 +97,13 @@
                     window.open("gestion_usuarios.html","_self");
                     break;
                 case 3:
-                    
+                    window.open("productos_inventario.html","_self");
                     break;
                 case 4:
-                    
+                    window.open("historial_donaciones.html","_self");
                     break;
                 case 5:
-                    
+                    window.open("historial_ventas.html","_self");
                     break;
                 case 6:
                     window.open("../Menu_pventa.html","_self");

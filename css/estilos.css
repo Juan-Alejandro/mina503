@@ -1084,6 +1084,7 @@ body {
     text-align: center;
     width: 100%;
     flex: 1 1 auto;
+    cursor: pointer;
 }
 .p_redirect_venta {
     color: white;
@@ -1108,7 +1109,7 @@ body {
 
 
 /*Apartado para dispositivos moviles*/
-@media(max-width: 500px){
+@media(max-width: 768px){
 /*CABECERA*/
     .bus_cabecera {
         margin-top: 1vh;
@@ -1326,49 +1327,7 @@ body {
     .div_prin_cantflet_ventas div label {
         font-size: 2rem;
     }
-    /*GESTION DE USUARIOS*/
-    .div_cuerpoprin_gestion_usuarios {
-        width: 100%;
-        float: none;
-        display: flex;
-        flex-wrap: wrap;   
-    }
-    .div_cuerpoprin_gestion_usuarios div {
-        margin: 0;
-    }
-    .div_prin_busqueda_gestion_usuarios {
-        width: 100%;
-    }
-    .div_prin_busqueda_gestion_usuarios span {
-        font-size: 3vh;
-    }
-    .div_prin_busqueda_gestion_usuarios input[type="text"] {
-        font-size: 2vh;
-    }
-    .div_prin_tablaoverflow_gestion_usuarios {
-        max-width: 55vh;
-        
-    }
-    .table_gestion_usuarios {
-        
-    }
-    .table_gestion_usuarios th , .table_gestion_usuarios td {
-        text-align: left;
-    }
-    .table_gestion_usuarios th {
-        text-align: right;
-        vertical-align: middle;
-        white-space: nowrap;
-    }
-    .table_gestion_usuarios tr {
-        display: flex;
-    }
-    .table_gestion_usuarios td {
-        flex: 1;
-    }
-    .table_gestion_usuarios th {
-        flex: 0 0 150px;
-    }
+    
 /*CONFIGURACIONES PARA LOS MENUS DE SECCIONES (APARTADOS)*/
     .ico_ham_ventas {
         display: flex;

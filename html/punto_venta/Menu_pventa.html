@@ -134,7 +134,8 @@
                     </h1>
                     <div 
                          class="div_btn_ventas_pventa div_btns_pventa" 
-                         onclick="openSection('1')"
+                         
+                         onclick="openSection('1');"
                     >
                         <a href="#">
                             <i class='bx bx-store' 
@@ -151,8 +152,10 @@
                         
                     </div>
                     <div 
-                         class="div_btn_usuarios_pventa div_btns_pventa" 
+                         class="div_btn_usuarios_pventa div_btns_pventa div_btns_action_pventa" 
+                         id="redirectLink"
                          onclick="openSection('2')"
+                         
                     >
                         <a>
                             <i 
@@ -173,8 +176,10 @@
                         </p>
                     </div>
                     <div 
-                         class="div_btn_productosinventario_pventa div_btns_pventa" 
+                         class="div_btn_productosinventario_pventa div_btns_pventa div_btns_action_pventa" 
+                         id="redirectLink"
                          onclick="openSection('3')"
+                         
                     >
                         <a href="#">
                             <i 
@@ -195,8 +200,10 @@
                         </p>
                     </div>
                     <div 
-                         class="div_btn_donacion_pventa div_btns_pventa" 
+                         class="div_btn_donacion_pventa div_btns_pventa div_btns_action_pventa" 
+                         id="redirectLink"
                          onclick="openSection('4')"
+                         
                     >
                         <a href="#">  
                             <i 
@@ -217,7 +224,8 @@
                         </p>
                     </div>
                     <div 
-                         class="div_btn_historialventas_pventa div_btns_pventa" 
+                         class="div_btn_historialventas_pventa div_btns_pventa div_btns_action_pventa" 
+                         id="redirectLink"
                          onclick="openSection('5')"
                     >
                         <a href="#">
@@ -248,6 +256,27 @@
                     lisnav_pventa.classList.toggle("active");
                 });
             });
+        
+        function revisarDisp(minanch, event) {
+            const dispancho = window.innerWidth;
+            if (dispancho < minanch) {
+                alert("El ancho del dispositivo es demasiado pequeño para acceder.");
+                event.preventDefault(); // Bloquea la acción predeterminada
+                window.location.href="Menu_pventa.html"
+            }
+        }
+
+        // Asociar evento al enlace
+        // Asociar evento al enlace
+        const links = document.querySelectorAll(".div_btns_action_pventa"); 
+        links.forEach((div) => {
+            div.addEventListener("click", (event) => { 
+                const minanch = 768;
+                revisarDisp(minanch, event);
+            });
+        });
+
+
     </script>
     <script src="../../javascript/index.js"> 
     </script>
