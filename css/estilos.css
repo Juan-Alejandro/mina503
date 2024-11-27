@@ -1040,6 +1040,13 @@ body {
 .btn_anadusu_gestion_usuarios.active {
     scale: 1;
 }
+
+/*HISTORIAL DE DONACIONES*/
+.div_cuerpoprin_historial_donaciones {
+    
+}
+
+
 /*CONFIGURACIONES PARA LOS MENUS DE SECCIONES (APARTADOS)*/
 #h1_tituloapartado_ventas {
     background: #F9D308;
