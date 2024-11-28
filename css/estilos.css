@@ -1043,10 +1043,200 @@ body {
 
 /*HISTORIAL DE DONACIONES*/
 .div_cuerpoprin_historial_donaciones {
+    width: 80%;
+    float: right;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.div_prinbuscar_historial_donaciones {
+    flex: 1 1 20vh;
+    border-bottom: 3px solid black;
+    display: flex;
+    flex-direction: row;
+}
+.div_prinbuscar_historial_donaciones div {
+    width: 50%;
+    padding: 2%;
+    align-content: center;
+}
+.div_prinbuscar_historial_donaciones label {
+    font-size: 5vh;
+    font-family: 'Grotesk';
+}
+.div_prinbuscar_historial_donaciones input {
+    font-size: 4vh;
+}
+
+.div_tabla_historial_donaciones {
+    flex: 1 1 50vh;
+    padding: 50px;
+}
+.div_tablaoverflow_historial_donaciones {
+    border: 1px solid black;
+    height: 100%;
+    max-height: 50vh;
+}
+.table_historial_donaciones {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table_historial_donaciones th {
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+.table_historial_donaciones td {
+    font-size: 3vh;
+    border: 1px solid black;
+    background: white;
+
+}
+
+.div_textmotivador_historial_donaciones {
+    flex: 1 1;
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size:2.5vh;
     
+}
+.div_textmotivador_historial_donaciones p {
+    background: lightgray;
 }
 
 
+/*PRODUCTOS E INVENTARIO*/
+.div_cuerpoprin_productos_inventario {
+    width: 80%;
+    float: right;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.div_cuerpoprin_productos_inventario div {
+    
+}
+.div_prinbuscarbtns_productos_inventario {
+    flex: 1 1 20vh;
+    width: 100%;
+    border-bottom: 3px solid black;
+    display: flex;
+}
+.divs_buscarproductos_gestion_usuarios {
+    flex: 1 1;
+    width: 50%;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    padding: 2vh;
+    font-family:'Merriweather';
+    align-content: center;
+}
+
+.div_prinbuscarbtns_productos_inventario label {
+    font-size: 5vh;
+    
+}
+.div_prinbuscarbtns_productos_inventario input {
+    font-size: 5vh;
+}
+.div_prinbuscarbtns_productos_inventario select {
+    font-size: 5vh;
+}
+.div_printabla_productos_inventario {
+    padding: 5vh;
+    flex: 1 1 50vh;
+}
+.div_printablaoverflow_productos_inventario {
+    height: 100%;
+    max-height: 50vh;
+    border: 1px solid black;
+    overflow-y: auto;
+}
+.table_productos_inventario {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table_productos_inventario th {
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+.table_productos_inventario td {
+    border: 1px solid black;
+    font-size: 3.5vh;
+    background: white;
+}
+.div_btns_productos_invetario {
+    flex: 1 1;
+    display: flex;
+    flex-direction: row;
+}
+.div_btns_productos_invetario div {
+    flex: 1;
+    width: 50%;
+}
+#div_left_productos_inventario {
+    text-align: center;
+}
+#div_right_productos_inventario {
+    text-align: end;
+    padding-right: 5%;
+}
+
+/*HISTORIAL DE VENTAS*/
+.div_cuerpoprin_historial_ventas {
+    width: 80%;
+    float: right;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.div_prinbusc_historial_ventas {
+    flex: 1 1 20vh;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 3px solid black;
+}
+.div_prinbusc_historial_ventas div {
+    flex:1 1;
+    align-content: center;
+    margin-left: 2%;
+}
+.div_prinbusc_historial_ventas label {
+    font-size: 5vh;
+    font-family: 'Merriweather';
+}
+.div_prinbusc_historial_ventas input {
+    font-size: 3.5vh;
+}
+
+.div_printabla_historial_ventas {
+    flex: 1 1 60vh;
+    padding: 5vh;
+}
+.div_tablaoverflow_historial_ventas {
+    height: 100%;
+    max-height: 50vh;
+    border: 1px solid black;
+    overflow-y: auto;
+}
+.table_historial_ventas {
+    width: 100%;
+    border-collapse: collapse;
+}
+.table_historial_ventas th {
+    background: black;
+    color: white;
+    border: 1px solid white;
+}
+.table_historial_ventas td {
+    background: white;
+    border: 1px solid black;
+    font-size: 3.5vh;
+}
 /*CONFIGURACIONES PARA LOS MENUS DE SECCIONES (APARTADOS)*/
 #h1_tituloapartado_ventas {
     background: #F9D308;
