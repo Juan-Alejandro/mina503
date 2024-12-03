@@ -1,0 +1,116 @@
+.main_apartados_index {
+    background: #FFFFFF;
+
+}
+.imagen_fondo_apartados {
+    
+    align-content: center;
+}
+.imagen_fondo_apartados h1 {
+    position: absolute;
+    padding-left: 30%;
+    color: white;
+    padding-top: 9%;
+    font-size: 5rem;
+    
+
+}
+.imagen_fondo_apartados img {
+    width: 100%;
+}
+.contenedor_datos_nosotros {
+
+    padding-left: 10%;
+
+}
+.contenedor_reducido_nosotros {
+    width: 90%;
+}
+.nuestra_historia {
+    display: flex;
+    flex-direction: row;
+}
+.nuestra_historia p {
+    width: 50%;
+    text-align: center;
+    padding: 10px;
+}
+.nuestra_historia p b {
+    width: 100%;
+    font-size: 8vh;
+    
+}
+.nuestra_historia p i {
+    font-size: 4vh;
+    text-align: justify;
+}
+.contenedor_c_e_s_d {
+    margin-top: 5%;
+    margin-bottom:7%;
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+}
+.contenedor_c_e_s_d div {
+    width: 25%;
+    text-align: center;
+    padding: 2%;
+}
+.contenedor_c_e_s_d div h1 {
+    text-align: center;
+    font-family: monospace;
+    font-size: 2.5rem;
+    
+}
+.contenedor_c_e_s_d p {
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: sans-serif;
+}
+.imagen_fondo_responsabilidad {
+    align-content: center;
+}
+.imagen_fondo_responsabilidad h1 {
+    position: absolute;
+    padding-left: 25%;
+    color: white;
+    padding-top: 9%;
+    font-size: 5rem;
+    
+
+}
+.imagen_fondo_responsabilidad img {
+    width: 100%;
+}
+.nuestra_historia font {
+    color: #ffcc00;
+    font-size: 3rem;
+    font-weight: bold;
+}
+.imagen_fondo_contacto {
+    align-content: center;
+}
+.imagen_fondo_contacto h1 {
+    position: absolute;
+    padding-left:  39%;
+    color: white;
+    padding-top: 7%;
+    font-size: 5rem;
+}
+.imagen_fondo_contacto img {
+    width: 100%;
+}
+.contenedo_mina_escucha {
+    margin-top: 5%;
+    text-align: center;
+    width: 90%;
+}
+.contenedo_mina_escucha h1 {
+    font-family: monospace;
+    font-size: 3rem;
+}
+.contenedo_mina_escucha p {
+    font-size: 30px;
+    margin: 50px;
+    font-family:serif;
+}

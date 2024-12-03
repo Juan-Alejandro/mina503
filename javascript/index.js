@@ -21,8 +21,24 @@
             }
             
             /*ABRIR COSAS*/
-            function abrirstandby() {
-                window.open("html/standby.html","_self");
+            function abrirstandby(opcionimagen) {
+                //window.open("html/standby.html","_self");
+                switch(opcionimagen) {
+                    case "1":
+                        window.location.href="html/apartados_index/nosotros.html";
+                        break;
+                    case "2":
+                        window.location.href="html/apartados_index/tienda.html";
+                        break;
+                    case "3":
+                        window.location.href="html/apartados_index/responsabilidad.html";
+                        break;
+                    case "4":
+                        window.location.href="html/apartados_index/contacto.html";
+                        break;
+                        
+                }
+                
             }
 /*MENU DE PUNTO DE VENTA*/
             /*MENU DESPLEGABLE MOVIL*/
