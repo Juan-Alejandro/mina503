@@ -1,3 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.cabecera {
+    background: #F9D308;
+}
+.p_cabecera {
+    display: flex;
+    align-items: flex-start;
+}
+.logo_animado {
+    height: 10vh;
+    vertical-align: top;
+    margin: 1vh; 
+}
+.bus_cabecera {
+    margin-left: 120vh;
+    
+}
+.btn_buscar_cabecera{
+    background: none;
+    border: none;
+    margin-top: 3.5vh;
+}
+.img_lupa_cabecera {
+    height: 50px;
+    
+}
+.img_lupa_cabecera:hover {
+    filter: drop-shadow(4px 2px 1px white);
+}
+.i_cabecera {
+    height: 5vh;
+    width: 300px;
+    border-radius: 10px;
+    vertical-align: top;
+    margin-top: 4vh;
+    font-size: 20px;
+}
+.bxs-user {
+    position:absolute;
+    font-size: 5vh;
+    margin-left: 5vh;
+    margin-top: 3vh;
+    border-radius: 100%;
+    color: white;
+    border: 2px solid black;
+    background: black;
+    padding: 1vh;
+    text-shadow: 3px 2px 10px white;
+ 
+    
+}
+#li_solomovil_principal {
+    display: none;
+}
+.bxs-user:hover {
+    color: black;
+    border: 2px solid black;
+    background: white;
+    text-shadow: 3px 2px 10px black;
+}
+.bar_nav_cabecera {
+    background: #333;
+    color: white;
+    position: relative;
+}
+.lis_nav_cabecera {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+.lis_nav_cabecera li {
+    position: relative;
+}
+.lis_nav_cabecera a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+.lis_nav_cabecera a:hover {
+    background: #555;
+}
+.ico_ham {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px 20px;
+}
+.ico_ham span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    transition: 0.3s;
+}
+
+
 .main_apartados_index {
     background: #FFFFFF;
 
@@ -113,4 +215,48 @@
     font-size: 30px;
     margin: 50px;
     font-family:serif;
+}
+
+
+    /* PARA MOVILES */
+@media(max-width: 500px) {
+    .bus_cabecera {
+        margin-top: 1vh;
+        margin-left: 3vh;
+        display: inline-flex;    
+    }
+    .img_lupa_cabecera {
+        margin-top: 1vh;    
+        height: 5vh;
+    }
+    .i_cabecera {
+        height: 5vh;
+        width: 25vh;
+        overflow-y: hidden;
+    }
+    #icon_cabecera_principal {
+        display: none;
+    }
+    #li_solomovil_principal {
+        display: block;
+    }
+    .ico_ham {
+        display: flex;
+    }
+    .lis_nav_cabecera {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        height: 0;
+        transition: height 1s ease;
+    }
+    .lis_nav_cabecera.active {
+        height: 236px;
+    }
+    .lis_nav_cabecera li {
+        border-bottom: 1px solid #555;
+    }
+
+
+
 }
